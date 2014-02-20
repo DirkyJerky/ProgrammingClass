@@ -2,7 +2,7 @@ ProgrammingClass
 ================
 
 To execute the assignments:
-  * First, download this repo By going to [ Download this Zip ] on the right navbar
+  * First, download this repo By going to [ Download ZIP ] on the right navbar
   * goto bin/assignments/MODULE_NUMBER and execute the relevent assignment with the JVM
   OR
   * goto bin/main and execute Main.class with the JVM
