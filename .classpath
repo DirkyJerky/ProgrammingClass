@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/monte-cc.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/jmf.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/guava-16.0.1.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/asm-4.0.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/asm-analysis-4.0.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/asm-commons-4.0.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/asm-tree-4.0.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/asm-util-4.0.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/groovy-2.0.4.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/groovy-xml-2.0.4.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/httpclient-4.2.2.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/httpcore-4.2.2.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/soa-model-core-1.4.1.4.jar"/>
+	<classpathentry kind="lib" path="P:/Programming/Externals/Refs/membrane-soa/soa-model-distribution-1.4.1.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
