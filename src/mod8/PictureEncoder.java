@@ -1,68 +1,50 @@
 package mod8;
 
+import java.io.File;
+
 import bookClasses.Picture;
 import bookClasses.Pixel;
 
-import com.google.common.base.Preconditions;
-
 public class PictureEncoder {
 	/* This encoder uses the red values for each pixel,
-	 * and the message is encoded in ascii  wherefor the 
-	 * bits are determined by if the red value is even or not.*/
+	 * and the message is encoded in ascii, wherefore the value of the 
+	 * red pixel in the top row is the message.*/
 	private Picture picture;
 	private String filename;
+	private Pixel[] topRow;
 	
-	public PictureEncoder(Picture picture, String filename) {
-		this.picture = picture;
+	public PictureEncoder(String filename) {
 		this.filename = filename;
+		if(new File(filename).canWrite()) {
+			this.picture = new Picture(filename);
+		} else {
+			throw new IllegalArgumentException("Picture must be writeable.");
+		}
+		this.topRow = new Pixel[this.picture.getWidth()];
+		for(int i = 0; i < this.picture.getWidth(); i++) {
+			this.topRow[i] = this.picture.getPixel(i, 0);
+		}
 	}
 	
-	public void normalize() {
-		for (Pixel pix : picture.getPixels()) {
-			if (pix.getRed() % 2 == 0) {
-				continue;
-			} else if (pix.getRed() >= 128) {
-				pix.setRed(pix.getRed() - 1);
+	public void encode(String message) {
+		char[] msgChars = message.toCharArray();
+		for(int i = 0; i < this.topRow.length; i++) { 
+			if(i < message.length()) {
+				this.topRow[i].setRed(Character.codePointAt(msgChars, i)); // Cast to int char values, etc " " => 32
 			} else {
-				pix.setRed(pix.getRed() + 1);
+				this.topRow[i].setRed(0); // Otherwise clear the rest of the row.
 			}
-		}
-	}
-	
-	public void encode(String s) {
-		this.normalize();
-		String binary = "";
-		char[] chars = s.toCharArray();
-		for( char charrr : chars) {
-			binary += Integer.toBinaryString((int) charrr);
-		}
-		char[] binaryChars = binary.toCharArray();
-		Pixel[] pixels = this.picture.getPixels();
-		Preconditions.checkArgument(binaryChars.length < pixels.length, "String to long");
-		for(int i = 0; i < binaryChars.length; i++) {
-			pixels[i].setRed(pixels[i].getRed() + Integer.valueOf(binaryChars[i]));
 		}
 		this.picture.write(this.filename);
 	}
 	public String decode() {
-		String binary = "";
-		Pixel[] pixels = this.picture.getPixels();
-		for(Pixel pix : pixels) {
-			binary += String.valueOf(pix.getRed() % 2);
+		StringBuilder message = new StringBuilder("");
+		for(int i = 0; i < this.topRow.length; i++) { 
+			if (this.topRow[i].getRed() >= 32) {
+				message.append(Character.toChars(this.topRow[i].getRed()));
+			}
 		}
-//		for (int i : new Range(8 - (binary.length() % 8)).range()) {
-//			binary += "0";
-//		}
-		String[] bytes = binary.split("(?<=\\G.{8})"); // Split it into equal sections 8 chars long
-		String string = "";
-		for (String s : bytes) {
-			if(s.contains("00000000")) { continue; } // skip if blank
-			int k = Integer.valueOf(s, 2); // binary -> code point
-			if(Character.isISOControl(k)) { continue; } // Ignore control chars
-			char l = (char) k;
-			string += String.valueOf(l); // code point -> char +-> string
-			
-		}
-		return string;
+		return message.toString();
+		
 	}
 }
