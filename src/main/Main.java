@@ -5,10 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-import mod7.Range;
+import assignments.Printer;
 
 import com.google.common.base.Preconditions;
-// Eclipse,.... lol
 
 public class Main {
 
@@ -25,6 +24,10 @@ public class Main {
 		int assignmentNum = in.nextInt();
 		Preconditions.checkArgument(assignmentNum >= 1 && assignmentNum <= 6, "Assignment number must be between 1 and 6");
 
+		System.out.println("Do you want to show the analysis questions or run the program?");
+		String runOrPrint = in.next();
+		boolean shouldRun = runOrPrint.toLowerCase().matches("p.*|r.*");
+		
 		in.close();
 		
 		Map<Integer, String> moduleNums = new HashMap<>();
@@ -41,20 +44,25 @@ public class Main {
 		assignmentNums.put(5, "Five");
 		assignmentNums.put(6, "Six");
 		assignmentNums.put(7, "Project");
+		
 		String mainId = "assignments."+ moduleNums.get(moduleNum) + "." + moduleNums.get(moduleNum) + assignmentNums.get(assignmentNum);
-		
-		
 		Class<?> mainClazz = Class.forName(mainId);
-		Method main = mainClazz.getMethod("main", String[].class);
-		
-		
-		for(@SuppressWarnings("unused") int unused : new Range(25).range()) {
-			System.out.print("\n");
+
+		System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"); // Twenty new lines
+		if(shouldRun) {
+			Method main = mainClazz.getMethod("main", String[].class);
+			main.invoke(null, new Object[] { ourArgs }); // Invoke main
+			Thread.sleep(10000); // Wait 10 seconds
+		} else {
+			try {
+				Printer printer = new Printer();
+				Method printQuestions = mainClazz.getMethod("printQuestions", Printer.class);
+				printQuestions.invoke(mainClazz.newInstance(), new Object[] { printer });
+			} catch (NoSuchMethodException nsme) {
+				System.out.println("No analysis questions present in class " + mainClazz.getName());
+			}
 		}
-		main.invoke(null, new Object[] { ourArgs });
-		Thread.sleep(10000);
-		System.exit(0);
-		
+		System.exit(0); // Terminate and cleanup
 	}
 
 }
