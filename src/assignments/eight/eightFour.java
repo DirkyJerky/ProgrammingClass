@@ -3,9 +3,10 @@ package assignments.eight;
 import java.util.Scanner;
 
 import mod8.PictureEncoder;
+import assignments.Analysis;
 import bookClasses.FileChooser;
 
-public class eightFour {
+public class eightFour implements Analysis{
 
 	public static void main(String[] args) {
 		System.out.println("Please select a picture.");

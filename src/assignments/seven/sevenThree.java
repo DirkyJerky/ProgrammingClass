@@ -6,10 +6,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+import assignments.Analysis;
 import bookClasses.Turtle;
 import bookClasses.World;
 
-public class sevenThree {
+public class sevenThree implements Analysis{
 
 	public static void main(String[] args) {
 		List<Color> colorList = new ArrayList<>();

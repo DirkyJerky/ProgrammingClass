@@ -1,13 +1,12 @@
 package assignments.seven;
 
+import assignments.Analysis;
 import bookClasses.Picture;
 import bookClasses.Turtle;
 import bookClasses.World;
 
-public class sevenOne
-{
-    public static void main(String[] args)
-    {
+public class sevenOne implements Analysis{
+    public static void main(String[] args) {
         int pixels = 0;
         Picture pictureObj = new Picture("P:\\Programming\\Externals\\Refs\\Maze_Background.jpg");   
         World worldObj = new World();                          

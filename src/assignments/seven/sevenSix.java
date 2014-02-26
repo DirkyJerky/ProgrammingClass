@@ -1,8 +1,9 @@
 package assignments.seven;
 
+import assignments.Analysis;
 import mod6.BigIdea;
 
-public class sevenSix {
+public class sevenSix implements Analysis{
 
 	public static void main(String[] args) {
 		BigIdea idea = new BigIdea(6, "Make a turtle dance floor");

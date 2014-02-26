@@ -2,11 +2,12 @@ package assignments.seven;
 
 import java.util.Stack;
 
+import assignments.Analysis;
 import bookClasses.Turtle;
 import bookClasses.World;
 import mod7.TurtleGraph;
 
-public class sevenFour {
+public class sevenFour implements Analysis{
 	public static void main(String[] args) {
 		World world = new World();
 		Turtle turtle = new Turtle(10, 10, world);

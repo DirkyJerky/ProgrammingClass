@@ -1,6 +1,8 @@
 package assignments.nine;
 
-public class nineFive {
+import assignments.Analysis;
+
+public class nineFive implements Analysis{
 	
 	public static void main(String[] args) {
 		System.out.println("Tell Geoff he needs to actually do something here");

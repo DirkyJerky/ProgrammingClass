@@ -7,11 +7,12 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import assignments.Analysis;
 import bookClasses.FileChooser;
 import bookClasses.Picture;
 import bookClasses.Pixel;
 
-public class eightThree {
+public class eightThree implements Analysis{
 	
 	public static void main(String[] args) throws Exception {
 		

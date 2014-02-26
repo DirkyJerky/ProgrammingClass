@@ -5,10 +5,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 import mod7.Range;
+import assignments.Analysis;
 import bookClasses.Turtle;
 import bookClasses.World;
 
-public class eightOne {
+public class eightOne implements Analysis{
 
 	final static int LEN = 100;
 	final static int TIMEOUT = 1000;

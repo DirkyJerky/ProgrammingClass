@@ -3,11 +3,12 @@ package assignments.eight;
 import java.util.Scanner;
 
 import mod8.Grayscale;
+import assignments.Analysis;
 import bookClasses.FileChooser;
 import bookClasses.Picture;
 import bookClasses.Pixel;
 
-public class eightFive {
+public class eightFive implements Analysis{
 
 	public static void main(String[] args) {
 		System.out.println("Select your grayscale picture or hit cancel to select a picture to be grayscaled.");

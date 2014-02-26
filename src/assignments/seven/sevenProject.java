@@ -8,10 +8,11 @@ import java.util.Random;
 import mod7.CoordPair;
 import mod7.RandomColor;
 import mod7.Range;
+import assignments.Analysis;
 import bookClasses.Turtle;
 import bookClasses.World;
 
-public class sevenProject {
+public class sevenProject implements Analysis{
 	final static int PADDING = 50;
 	final static int SCALE = 40;
 	final static int TIMEOUT = 1000; // Millis

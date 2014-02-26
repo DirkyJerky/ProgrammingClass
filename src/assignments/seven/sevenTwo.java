@@ -2,10 +2,11 @@ package assignments.seven;
 
 import java.awt.Color;
 
+import assignments.Analysis;
 import bookClasses.Turtle;
 import bookClasses.World;
 
-public class sevenTwo {
+public class sevenTwo implements Analysis{
 
 	public static void main(String[] args) {
 		final Color LIME = new Color(Integer.decode("#7CFC00"));

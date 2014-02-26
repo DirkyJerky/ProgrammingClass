@@ -9,10 +9,11 @@ import mod7.RandomColor;
 
 import com.google.common.base.Preconditions;
 
+import assignments.Analysis;
 import bookClasses.Turtle;
 import bookClasses.World;
 
-public class sevenFive {
+public class sevenFive implements Analysis{
 	public static void main(String[] args) throws Exception {
 		
 		final int BOX_SIZE = 200;

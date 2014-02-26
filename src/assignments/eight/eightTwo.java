@@ -5,9 +5,10 @@ import java.util.Map;
 import java.util.Scanner;
 
 import mod8.Effects;
+import assignments.Analysis;
 import bookClasses.Picture;
 
-public class eightTwo {
+public class eightTwo implements Analysis{
 
 	public static void main(String[] args) {
 //		System.out.println("Close window to go onto the next picture");
