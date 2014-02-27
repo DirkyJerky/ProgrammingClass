@@ -67,7 +67,7 @@ public class eightOne implements Analysis{
 	public static void normalize(Turtle t) {
 		t.setPenColor(FRACTAL_COLOR);
 		t.setPenWidth(FRACTAL_WIDTH);
-		t.hide();
+//		t.hide();
 	}
 
 	@Override

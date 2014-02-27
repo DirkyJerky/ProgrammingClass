@@ -84,7 +84,7 @@ public class sevenTwo implements Analysis{
 		p.printTab("Draw more than one object.");
 		
 		p.print("If you were updating the Turtle class, what is one additional method you would include?");
-		p.printTab("A Turtle.moveTo(int x, int y");
+		p.printTab("A Turtle.moveTo(int x, int y, boolean relative)");
 		
 		p.print("What question(s) of your own did you answer while writing this program?");
 		p.printTab("None really");
