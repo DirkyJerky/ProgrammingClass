@@ -8,6 +8,7 @@ import java.util.Collections;
 import java.util.List;
 
 import assignments.Analysis;
+import assignments.Printer;
 import bookClasses.FileChooser;
 import bookClasses.Picture;
 import bookClasses.Pixel;
@@ -60,6 +61,11 @@ public class eightThree implements Analysis{
 		panorama.show();
 		Thread.sleep(10000);
 		System.exit(0);
+		
+	}
+
+	@Override
+	public void printQuestions(Printer printer) {
 		
 	}
 }
