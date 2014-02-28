@@ -38,34 +38,34 @@ public class eightTwo implements Analysis{
 	public void printQuestions(Printer printer) {
 
 		printer.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
-		printer.printTab("Apply color effects to pictures");
+		printer.printAnswer("Apply color effects to pictures");
 		
 		printer.print("Discuss how this assignment relates to a real-life situation. (Required)");
-		printer.printTab("This could be used to help partially color blind people see color in pictures they wouldnt otherwise.");
+		printer.printAnswer("This could be used to help partially color blind people see color in pictures they wouldnt otherwise.");
 		
 		printer.print("Reflect on your growth as a programmer. (Required)");
-		printer.printTab("I learned how to initialize and use a 'Factory', a class that you instantate and then with one method generates an object of value.");
+		printer.printAnswer("I learned how to initialize and use a 'Factory', a class that you instantate and then with one method generates an object of value.");
 		
 		printer.print("Describe the biggest problem encountered and how it was fixed.");
-		printer.printTab("Figuring out how to allow pictures to be inverted and changed at the same time.");
+		printer.printAnswer("Figuring out how to allow pictures to be inverted and changed at the same time.");
 		
 		printer.print("Describe at least one thing that will be done differently in the future.");
-		printer.printTab("Add a optional option to the Effect.apply to make it accept a boolean representing if it should be inverted");
+		printer.printAnswer("Add a optional option to the Effect.apply to make it accept a boolean representing if it should be inverted");
 		
 		printer.print("Suggest how this assignment could be extended.");
-		printer.printTab("Make it support grayscaling");
+		printer.printAnswer("Make it support grayscaling");
 		
 		printer.print("What other special effect(s) might be possible?");
-		printer.printTab("Dimming a picture, brightining one, etc.");
+		printer.printAnswer("Dimming a picture, brightining one, etc.");
 		
 		printer.print("How could you combine two special effects?");
-		printer.printTab("Take the applied picture, make another Effects factory from it, and apply some more.");
+		printer.printAnswer("Take the applied picture, make another Effects factory from it, and apply some more.");
 				
 		printer.print("What question(s) of your own did you answer while writing this program?");
-		printer.printTab("How to make a static factory.");
+		printer.printAnswer("How to make a static factory.");
 				
 		printer.print("What unanswered question(s) do you have after writing this program?");
-		printer.printTab("Is using string parameters like in Effects.apply() a good idea?");
+		printer.printAnswer("Is using string parameters like in Effects.apply() a good idea?");
 	}
 
 }

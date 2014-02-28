@@ -66,31 +66,31 @@ public class sevenTwo implements Analysis{
 	@Override
 	public void printQuestions(Printer p) {
 		p.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
-		p.printTab("Draw somthing with the turtle");
+		p.printAnswer("Draw somthing with the turtle");
 		
 		p.print("Discuss how this assignment relates to a real-life situation. (Required)");
-		p.printTab("If you had a robot with different colo0red pens, this could enable it to draw something.");
+		p.printAnswer("If you had a robot with different colo0red pens, this could enable it to draw something.");
 		
 		p.print("Reflect on your growth as a programmer. (Required)");
-		p.printTab("Not much.");
+		p.printAnswer("Not much.");
 		
 		p.print("Describe the biggest problem encountered and how it was fixed.");
-		p.printTab("Drawing the boxes and get the coords right.");
+		p.printAnswer("Drawing the boxes and get the coords right.");
 		
 		p.print("Describe at least one thing that will be done differently in the future.");
-		p.printTab("Put the coord pairs in a List");
+		p.printAnswer("Put the coord pairs in a List");
 		
 		p.print("Suggest how this assignment could be extended.");
-		p.printTab("Draw more than one object.");
+		p.printAnswer("Draw more than one object.");
 		
 		p.print("If you were updating the Turtle class, what is one additional method you would include?");
-		p.printTab("A Turtle.moveTo(int x, int y, boolean relative)");
+		p.printAnswer("A Turtle.moveTo(int x, int y, boolean relative)");
 		
 		p.print("What question(s) of your own did you answer while writing this program?");
-		p.printTab("None really");
+		p.printAnswer("None really");
 		
 		p.print("What unanswered question(s) do you have after writing this program?");
-		p.printTab("How to store coord pairs in a list...");
+		p.printAnswer("How to store coord pairs in a list...");
 		
 	}
 

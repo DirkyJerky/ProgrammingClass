@@ -8,6 +8,11 @@ public class Printer {
 		System.out.print(o);
 	}
 	public void printTab(Object o) {
-		System.out.println("\t" + o);
+		this.printNoLine("\t");
+		this.print(o);
+	}
+	public void printAnswer(Object o) {
+		this.printTab("-- " + o);
+		this.print("\n");
 	}
 }

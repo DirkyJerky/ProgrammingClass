@@ -95,31 +95,31 @@ public class sevenThree implements Analysis{
 	@Override
 	public void printQuestions(Printer printer) {
 		printer.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
-		printer.printTab("Make abstract art using");
+		printer.printAnswer("Make abstract art using");
 		
 		printer.print("Discuss how this assignment relates to a real-life situation. (Required)");
-		printer.printTab("It really doesnt besides the fact that programs like these can be used to generate more abstract art, or even modified to meet requirements.");
+		printer.printAnswer("It really doesnt besides the fact that programs like these can be used to generate more abstract art, or even modified to meet requirements.");
 		
 		printer.print("Reflect on your growth as a programmer. (Required)");
-		printer.printTab("I learned how to use static methods to preform repetitive tasks");
+		printer.printAnswer("I learned how to use static methods to preform repetitive tasks");
 		
 		printer.print("Describe the biggest problem encountered and how it was fixed.");
-		printer.printTab("Figuring out why it was going the wrong direction, turned out that the turtle was upsidedown. I solved it by adding a timeout and not hiding the turtle.");
+		printer.printAnswer("Figuring out why it was going the wrong direction, turned out that the turtle was upsidedown. I solved it by adding a timeout and not hiding the turtle.");
 		
 		printer.print("Describe at least one thing that will be done differently in the future.");
-		printer.printTab("Give the user options on what is generated.");
+		printer.printAnswer("Give the user options on what is generated.");
 		
 		printer.print("Suggest how this assignment could be extended.");
-		printer.printTab("By making some lines overlap and some not");
+		printer.printAnswer("By making some lines overlap and some not");
 		
 		printer.print("In general, what would it take to write a program that automatically creates Mondrian art?");
-		printer.printTab("Not much");
+		printer.printAnswer("Not much");
 		
 		printer.print("What question(s) of your own did you answer while writing this program?");
-		printer.printTab("How to  make the turtle goto varialbe locations with one call.");
+		printer.printAnswer("How to  make the turtle goto varialbe locations with one call.");
 		
 		printer.print("What unanswered question(s) do you have after writing this program?");
-		printer.printTab("How to easily add all the colors into the Arraylist instead of using for loops?");
+		printer.printAnswer("How to easily add all the colors into the Arraylist instead of using for loops?");
 		
 		
 		

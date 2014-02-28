@@ -1,7 +1,5 @@
 package me.yoerger.geoff.edu.progClass.mod7;
 
-import java.math.BigInteger;
-
 public class CoordPair {
 	
 	private final int x;
@@ -26,8 +24,6 @@ public class CoordPair {
 	
 	@Override
 	public int hashCode() {
-		BigInteger x = new BigInteger(String.valueOf(this.x));
-		BigInteger y = new BigInteger(String.valueOf(this.y));
-		return x.xor(y).hashCode();
+		return this.x * 100 | (this.y & this.x + this.y);
 	}
 }

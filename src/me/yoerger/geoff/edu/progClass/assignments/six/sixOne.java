@@ -11,19 +11,19 @@ public class sixOne implements Analysis {
 	
 	public void printQuestions(Printer p) {
 		p.print("Why do you think there is such public misperception about computer science?");
-		p.printTab("Because its so foreign and its growth is like none other.");
+		p.printAnswer("Because its so foreign and its growth is like none other.");
 		
 		p.print("At this point in the course, what is your personal definition of computer science?");
-		p.printTab("Teaching computers to do what they were built to do.");
+		p.printAnswer("Teaching computers to do what they were built to do.");
 		
 		p.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment.");
-		p.printTab("To demonstrate how to preform tasks.");
+		p.printAnswer("To demonstrate how to preform tasks.");
 		
 		p.print("Discuss how this assignment relates to a real-life situation.");
-		p.printTab("This assignment is models a real life situation.");
+		p.printAnswer("This assignment literally does model a real life situation.");
 		
 		p.print("Reflect on your ability to think algorithmically.");
-		p.printTab("Ive been with computers for a while now, I think I can do it quite well.");
+		p.printAnswer("Ive been with computers for a while now, I think I can do it quite well.");
 	}
 
 }

@@ -85,34 +85,34 @@ public class sixProject implements Analysis{
 	@Override
 	public void printQuestions(Printer p) {
 		p.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
-		p.printTab("Make a program to determine if a given classname exists in the java sys library");
+		p.printAnswer("Make a program to determine if a given classname exists in the java sys library");
 		
 		p.print("Discuss how this assignment relates to a real-life situation. (Required)");
-		p.printTab("This could be used to see if a user input thats supposed to be a classname really is one or not.");
+		p.printAnswer("This could be used to see if a user input thats supposed to be a classname really is one or not.");
 		
 		p.print("Reflect on your growth as a programmer. (Required)");
-		p.printTab("I Learned how to get URLs");
+		p.printAnswer("I Learned how to get URLs");
 		
 		p.print("Describe the biggest problem encountered and how it was fixed.");
-		p.printTab("Getting the URL for javadoc of the class; I just make it return true or false.");
+		p.printAnswer("Getting the URL for javadoc of the class; I just make it return true or false.");
 		
 		p.print("Describe at least one thing that will be done differently in the future.");
-		p.printTab("Make it return the URL");
+		p.printAnswer("Make it return the URL");
 		
 		p.print("Suggest how this assignment could be extended.");
-		p.printTab("Make it look through the JRE library on the host instead.");
+		p.printAnswer("Make it look through the JRE library on the host instead.");
 		
 		p.print("How did your Module Project help you extend the media computing concepts learned in this lesson?");
-		p.printTab("It didnt have much to do with media.");
+		p.printAnswer("It didnt have much to do with media.");
 		
 		p.print("What did you like the most about your Module Project? What did you like the least?");
-		p.printTab("The practicality; Its doesnt give a URL back, just T/F");
+		p.printAnswer("The practicality; Its doesnt give a URL back, just T/F");
 		
 		p.print("What question(s) of your own did you answer while writing this program?");
-		p.printTab("How to access URLs");
+		p.printAnswer("How to access URLs");
 		
 		p.print("What unanswered question(s) do you have after writing this program?");
-		p.printTab("How to fix the parser throwing an exception when parsing the HTML page.");
+		p.printAnswer("How to fix the parser throwing an exception when parsing the HTML page.");
 		
 	}
 }

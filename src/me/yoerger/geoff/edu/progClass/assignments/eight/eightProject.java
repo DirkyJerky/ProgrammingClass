@@ -104,35 +104,35 @@ public class eightProject implements Analysis{
 
 	public void printQuestions(Printer printer) {
 		printer.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
-		printer.printTab("Extend a previous assignment or make a new challenge, I did the first.");
+		printer.printAnswer("Extend a previous assignment or make a new challenge, I did the first.");
 		
 		printer.print("Discuss how this assignment relates to a real-life situation. (Required)");
-		printer.printTab("Fractals take up a huge part of abstract geometry, this can help study them, make them, and analyze them.");
+		printer.printAnswer("Fractals take up a huge part of abstract geometry, this can help study them, make them, and analyze them.");
 		
 		printer.print("Reflect on your growth as a programmer. (Required)");
-		printer.printTab("Thi");
+		printer.printAnswer("Thi");
 		
 		printer.print("Describe the biggest problem encountered and how it was fixed.");
-		printer.printTab("Why the turtles were not bieng copied, turns out I was using in.next() when I should have"
+		printer.printAnswer("Why the turtles were not bieng copied, turns out I was using in.next() when I should have"
 				+ "been using in.nextLine() because that input needed containted spaces.");
 		
 		printer.print("Describe at least one thing that will be done differently in the future.");
-		printer.printTab("Use a premade logger instead of System.out.print()");
+		printer.printAnswer("Use a premade logger instead of System.out.print()");
 		
 		printer.print("Suggest how this assignment could be extended.");
-		printer.printTab("By making the fractal start on different positions to contemplate with different fractals.");
+		printer.printAnswer("By making the fractal start on different positions to contemplate with different fractals.");
 		
 		printer.print("How did your Module Project help you extend the media computing concepts learned in this lesson?");
-		printer.printTab("This one helped me strengthen my debuging and prompting skills.");
+		printer.printAnswer("This one helped me strengthen my debuging and prompting skills.");
 		
 		printer.print("What did you like the most about your Module Project? What did you like the least?");
-		printer.printTab("How much different things you can draw with it; The static colors");
+		printer.printAnswer("How much different things you can draw with it; The static colors");
 		
 		printer.print("What question(s) of your own did you answer while writing this program?");
-		printer.printTab("How imagine the flow of the program to know figure out what wasnt working right.");
+		printer.printAnswer("How imagine the flow of the program to know figure out what wasnt working right.");
 		
 		printer.print("What unanswered question(s) do you have after writing this program?");
-		printer.printTab("How do I get rid of all those exceptions in the other thread where the drawing happens.");
+		printer.printAnswer("How do I get rid of all those exceptions in the other thread where the drawing happens.");
 		
 		
 	}

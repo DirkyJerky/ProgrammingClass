@@ -45,31 +45,31 @@ public class sixFour implements Analysis{
 
 	public void printQuestions(Printer p) {
 		p.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
-		p.printTab("Make a spam letter");
+		p.printAnswer("Make a spam letter");
 		
 		p.print("Discuss how this assignment relates to a real-life situation. (Required)");
-		p.printTab("Corrupt Companies do things like this all the time to trick people into stupid things.");
+		p.printAnswer("Corrupt Companies do things like this all the time to trick people into stupid things.");
 		
 		p.print("Reflect on your growth as a programmer. (Required)");
-		p.printTab("I learned that making one string per line and individually printing each on is Stupid");
+		p.printAnswer("I learned that making one string per line and individually printing each on is Stupid");
 		
 		p.print("Describe the biggest problem encountered and how it was fixed.");
-		p.printTab("Copy pasting all the individual lines that were terribly made into a map");
+		p.printAnswer("Copy pasting all the individual lines that were terribly made into a map");
 		
 		p.print("Describe at least one thing that will be done differently in the future.");
-		p.printTab("Hopefully whoever made the boilerplate will do it better next time...");
+		p.printAnswer("Hopefully whoever made the boilerplate will do it better next time...");
 		
 		p.print("Suggest how this assignment could be extended.");
-		p.printTab("By asking the user for the scam infomation first, then printing it based on that.");
+		p.printAnswer("By asking the user for the scam infomation first, then printing it based on that.");
 		
 		p.print("What is a legitimate use for a program that uses a generic \"shell\" to customize large numbers of letters or documents");
-		p.printTab("Mass-production instead of having to type every single letter.");
+		p.printAnswer("Mass-production instead of having to type every single letter.");
 		
 		p.print("What question(s) of your own did you answer while writing this program?");
-		p.printTab("None");
+		p.printAnswer("None");
 		
 		p.print("What unanswered question(s) do you have after writing this program?");
-		p.printTab("How much better is it to use maps to store strings instead of institating every line on its own.");
+		p.printAnswer("How much better is it to use maps to store strings instead of institating every line on its own.");
 		
 	}
 

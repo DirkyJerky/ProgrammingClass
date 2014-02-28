@@ -73,34 +73,34 @@ public class eightOne implements Analysis{
 	@Override
 	public void printQuestions(Printer printer) {
 		printer.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
-		printer.printTab("Draw a Fractal");
+		printer.printAnswer("Draw a Fractal");
 		
 		printer.print("Discuss how this assignment relates to a real-life situation. (Required)");
-		printer.printTab("Fractals are a large part of abstract geometry, this allows you to change the scale to show different fractals if neccessary");
+		printer.printAnswer("Fractals are a large part of abstract geometry, this allows you to change the scale to show different fractals if neccessary");
 		
 		printer.print("Reflect on your growth as a programmer. (Required)");
-		printer.printTab("I learned to to uncuncurently iterate over a changing list.");
+		printer.printAnswer("I learned to to uncuncurently iterate over a changing list.");
 		
 		printer.print("Describe the biggest problem encountered and how it was fixed.");
-		printer.printTab("When I was iterating over all the turtles and adding new ones, it didnt like that. So I made a temp copy of the list in that state and used it instead.");
+		printer.printAnswer("When I was iterating over all the turtles and adding new ones, it didnt like that. So I made a temp copy of the list in that state and used it instead.");
 		
 		printer.print("Describe at least one thing that will be done differently in the future.");
-		printer.printTab("Provide the option to show tohe animation or not. Same with the scale");
+		printer.printAnswer("Provide the option to show tohe animation or not. Same with the scale");
 		
 		printer.print("Suggest how this assignment could be extended.");
-		printer.printTab("Do different fractals");
+		printer.printAnswer("Do different fractals");
 		
 		printer.print("How could you create a fractal with different colors?");
-		printer.printTab("Just change the static color field at the top of the source file");
+		printer.printAnswer("Just change the static color field at the top of the source file");
 		
 		printer.print("How could you invert a fractal so that it is drawn in the opposite direction?");
-		printer.printTab("turtle.turn(180) at the top.");
+		printer.printAnswer("turtle.turn(180) at the top.");
 		
 		printer.print("What question(s) of your own did you answer while writing this program?");
-		printer.printTab("How to create a copy of a list that doesnt change");
+		printer.printAnswer("How to create a copy of a list that doesnt change");
 		
 		printer.print("What unanswered question(s) do you have after writing this program?");
-		printer.printTab("How to stop the spam of the concurrent modification exceptions from the other threads.");
+		printer.printAnswer("How to stop the spam of the concurrent modification exceptions from the other threads.");
 		
 		
 	}

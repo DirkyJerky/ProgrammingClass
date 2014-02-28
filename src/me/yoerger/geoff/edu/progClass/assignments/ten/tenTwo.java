@@ -12,7 +12,7 @@ public class tenTwo implements Analysis{
 	@Override
 	public void printQuestions(Printer printer) {
 		printer.print("TODO");
-		printer.printTab("TODO");
+		printer.printAnswer("TODO");
 		
 		
 	}

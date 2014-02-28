@@ -47,37 +47,37 @@ public class sixFive implements Analysis {
 	
 	public void printQuestions(Printer p) {
 		p.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
-		p.printTab("Make a console program to track movie ticket sellings");
+		p.printAnswer("Make a console program to track movie ticket sellings");
 		
 		p.print("Discuss how this assignment relates to a real-life situation. (Required)");
-		p.printTab("That program could be used (with a cashier of course) to sell movie tickets at a theatre");
+		p.printAnswer("That program could be used (with a cashier of course) to sell movie tickets at a theatre");
 		
 		p.print("Reflect on your growth as a programmer. (Required)");
-		p.printTab("Here I practiced making objects contain reference fields, e.a. the MovieTicket object takes a MovieUser object");
+		p.printAnswer("Here I practiced making objects contain reference fields, e.a. the MovieTicket object takes a MovieUser object");
 		
 		p.print("Describe the biggest problem encountered and how it was fixed.");
-		p.printTab("How to handle where the MovieTicket s are used");
+		p.printAnswer("How to handle where the MovieTicket s are used");
 		
 		p.print("Describe at least one thing that will be done differently in the future.");
-		p.printTab("Make a central static java.lang.List to keep track of the tickets");
+		p.printAnswer("Make a central static java.lang.List to keep track of the tickets");
 		
 		p.print("Suggest how this assignment could be extended.");
-		p.printTab("Make it able to sell more than one ticket at a time in one execution");
+		p.printAnswer("Make it able to sell more than one ticket at a time in one execution");
 		
 		p.print("How could the interactivity of this program be improved?");
-		p.printTab("By having a user make an account and be able to access their account details");
+		p.printAnswer("By having a user make an account and be able to access their account details");
 		
 		p.print("How could the output of this program be improved?");
-		p.printTab("By using something other than a console, like a JFrame");
+		p.printAnswer("By using something other than a console, like a JFrame");
 		
 		p.print("What user security issues could be improved in this program?");
-		p.printTab("The credit card being stored in plain text");
+		p.printAnswer("The credit card being stored in plain text");
 		
 		p.print("What question(s) of your own did you answer while writing this program?");
-		p.printTab("Not much.");
+		p.printAnswer("Not much.");
 		
 		p.print("What additional questions can you answer by further experimentation with this code?");
-		p.printTab("How to use a static list in a <InsertClassName>Manager named class.");
+		p.printAnswer("How to use a static list in a <InsertClassName>Manager named class.");
 		
 		
 	}

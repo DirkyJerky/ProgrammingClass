@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.Vector;
 
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
+import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.Turtle;
 import me.yoerger.geoff.edu.progClass.bookClasses.World;
 import me.yoerger.geoff.edu.progClass.mod7.RandomColor;
@@ -83,6 +84,28 @@ public class sevenFive implements Analysis{
 			anim.run();
 		}
 		System.exit(0);
+	}
+
+	@Override
+	public void printQuestions(Printer printer) {
+		printer.print("Describe the main point of this assignment. (Required)");
+		printer.printAnswer("Make an animation of sorts");
+		printer.print("Discuss how this assignment relates to a real-life situation. (Required)");
+		printer.printAnswer("Animations are the new love of society, you see movies and videos all the time.");
+		printer.print("Reflect on your growth as a programmer. (Required)");
+		printer.printAnswer("I learned how staticly sleep a thread as to make animations.");
+		printer.print("Describe the biggest problem encountered and how it was fixed.");
+		printer.printAnswer("Making the animation stay within the box");
+		printer.print("Describe at least one thing that will be done differently in the future.");
+		printer.printAnswer("Make an object to handle that task of telling the turtle where to go.");
+		printer.print("Suggest how this assignment could be extended.");
+		printer.printAnswer("By making the turtles go in patterns");
+		printer.print("How could the animation be made more realistic?");
+		printer.printAnswer("By making it follow a path thats not a box.");
+		printer.print("What question(s) of your own did you answer while writing this program?");
+		printer.printAnswer("How to erase a turtles past path.");
+		printer.print("What unanswered question(s) do you have after writing this program?");
+		printer.printAnswer("How to make an iterable over points on a line...");
 	}
 
 }
