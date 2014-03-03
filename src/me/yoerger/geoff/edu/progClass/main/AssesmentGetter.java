@@ -36,7 +36,12 @@ public class AssesmentGetter {
 		assignmentNums.put(6, "Six");
 		assignmentNums.put(7, "Project");
 		
-		String mainId = "me.yoerger.geoff.edu.progClass.assignments."+ moduleNums.get(moduleNum) + "." + moduleNums.get(moduleNum) + assignmentNums.get(assignmentNum);
+		String mainId = 
+					"me.yoerger.geoff.edu.progClass.assignments."
+					+ moduleNums.get(moduleNum)
+					+ "." 
+					+ moduleNums.get(moduleNum) 
+					+ assignmentNums.get(assignmentNum);
 		return Class.forName(mainId);
 	}
 }
