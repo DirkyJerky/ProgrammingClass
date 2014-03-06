@@ -14,6 +14,23 @@
             <artifactId>jmf</artifactId>
             <version>2.1.1e</version>
         </dependency>
+        <dependency>
+        	<groupId>org.apache.commons</groupId>
+        	<artifactId>common-collections4</artifactId>
+        	<version>4.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.example</groupId>
+        	<artifactId>javazoom</artifactId>
+        	<systemPath>${project.basedir}/lib/javazoom.jar</systemPath>
+        	<version>1.0</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.example</groupId>
+        	<artifactId>monte-cc</artifactId>
+        	<version>1.0</version>
+        	<systemPath>${project.basedir}/lib/monte-cc.jar</systemPath>
+        </dependency>
     </dependencies>
     <plugins>
         <plugin>
@@ -25,4 +42,5 @@
             </configuration>
         </plugin>
     </plugins>
+    <name>Programming Class Assignments - Geoff Yoerger</name>
 </project>
