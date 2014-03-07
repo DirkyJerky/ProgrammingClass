@@ -2,14 +2,17 @@ package me.yoerger.geoff.edu.progClass.mod9;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Shape;
 import java.awt.Stroke;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
+import java.util.Random;
 
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
+import me.yoerger.geoff.edu.progClass.mod7.RandomColor;
 
 public class Drawer {
 	private Picture thisPicture;
@@ -46,6 +49,9 @@ public class Drawer {
 		this.setColor(color);
 		this.setLineWidth(lineWidth);
 	}
+	public void setRandom() {
+		this.set(RandomColor.make(), new Random().nextInt(15));
+	}
 	public float setLineWidth(float len) {
 		BasicStroke oldStroke = (BasicStroke) this.graphics.getStroke();
 		this.graphics.setStroke(new BasicStroke(len));
@@ -56,7 +62,8 @@ public class Drawer {
 		this.graphics.setColor(color);
 	}
 	public void drawString(String string, int xPos, int yPos) {
-		this.thisPicture.drawString(string, xPos, yPos);
+		this.graphics.setFont(new Font("Helvetica",Font.BOLD,16));
+		this.graphics.drawString(string,xPos,yPos);
 	}
 	public void  drawRect(Rectangle2D rect) {
 		this.draw(rect);
