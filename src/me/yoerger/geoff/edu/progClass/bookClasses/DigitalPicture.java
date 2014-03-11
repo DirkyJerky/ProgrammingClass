@@ -3,6 +3,8 @@ package me.yoerger.geoff.edu.progClass.bookClasses;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 
+import sun.awt.image.ImageFormatException;
+
 /**
  * Interface to describe a digital picture.  A digital picture can have a 
  * associated file name.  It can have a title.  It has pixels 
@@ -27,6 +29,6 @@ public interface DigitalPicture
  public void setBasicPixel(int x, int y, int rgb); // set the pixel information
  public Pixel getPixel(int x, int y); // get the pixel information as an object
  public void load(Image image); // load the image into the picture
- public boolean load(String fileName); // load the picture from a file
+ public boolean load(String fileName) throws ImageFormatException; // load the picture from a file
  public void show(); // show the picture 
 }

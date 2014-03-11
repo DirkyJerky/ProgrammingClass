@@ -2,6 +2,7 @@ package me.yoerger.geoff.edu.progClass.mod8;
 
 import java.io.File;
 
+import sun.awt.image.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
 
@@ -13,7 +14,7 @@ public class PictureEncoder {
 	private String filename;
 	private Pixel[] topRow;
 	
-	public PictureEncoder(String filename) {
+	public PictureEncoder(String filename) throws ImageFormatException {
 		this.filename = filename;
 		if(new File(filename).canWrite()) {
 			this.picture = new Picture(filename);
