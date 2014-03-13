@@ -71,8 +71,32 @@ public class nineThree extends PictureUser implements Analysis {
 
 	@Override
 	public void printQuestions(final Printer printer) {
-		printer.print("TODO");
-		printer.printAnswer("TODO");
+		printer.print("Describe the main point of this assignment. (Required)");
+		printer.printAnswer("Make a mirroring algorithm");
+
+		printer.print("Discuss how this assignment relates to a real-life situation. (Required)");
+		printer.printAnswer("Mirroring is used when making fractals.");
+
+		printer.print("Reflect on your growth as a programmer. (Required)");
+		printer.printAnswer("I learned how to catch exceptions when sometimes stuff works and sometimes it doesnt.");
+
+		printer.print("Describe the biggest problem encountered and how it was fixed.");
+		printer.printAnswer("Reflecting the picture in an easy way, I ended up just creating 4 variables for each corner instead.");
+
+		printer.print("Describe at least one thing that will be done differently in the future.");
+		printer.printAnswer("Use java.awt.image.AffineTransform and AffineTransformOp");
+
+		printer.print("Suggest how this assignment could be extended.");
+		printer.printAnswer("Figure out and fix why when updating the Graphics2D of a Picture the Picture doesnt always update");
+
+		printer.print("Why can't geometric shapes be drawn on a Graphics panel?");
+		printer.printAnswer("Because java.awt.Graphics is just an abstraction, it doesnt really represent anything");
+
+		printer.print("What question(s) of your own did you answer while writing this program?");
+		printer.printAnswer("How to perform integer wise mirroring with a double median");
+
+		printer.print("What unanswered question(s) do you have after writing this program?");
+		printer.printAnswer("How to fix the white lines in the center of the image?");
 
 	}
 }
