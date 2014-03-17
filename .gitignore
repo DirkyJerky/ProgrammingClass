@@ -1,5 +1,7 @@
 .classpath
 .project
+*.screenflow
+# Our recording
 
 # From github.com/github/gitignore
 # Eclipse
@@ -29,7 +31,7 @@ local.properties
 # PDT-specific
 .buildpath
 
-# sbteclipse plugin 
+# sbteclipse plugin
 .target
 
 # TeXlipse plugin
