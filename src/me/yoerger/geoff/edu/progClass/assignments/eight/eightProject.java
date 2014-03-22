@@ -32,7 +32,7 @@ public class eightProject implements Analysis{
 				"An example is '20, -20, 40, -40'");
 		
 		String code = in.nextLine().trim();
-		Preconditions.checkArgument(code.split("[, ]*?").length <= 10, "To much input there buddy, try some less numbers");
+		Preconditions.checkArgument(code.split(",").length <= 10, "To much input there buddy, try some less numbers");
 		System.out.println("How long do you want the initial lines to be? (A good one is 25-75)");
 		int phase = in.nextInt();
 		Preconditions.checkArgument(phase <= 150, "Thats to big, try something smaller than 150");
@@ -44,7 +44,7 @@ public class eightProject implements Analysis{
 		Preconditions.checkArgument(phase * Math.pow(SCALE, 15) < 50, "Try something smaller.");
 		in.close();
 		String[] degs = code.split(",");
-		;
+		
 		List<Integer> splits = new ArrayList<>();
 		
 

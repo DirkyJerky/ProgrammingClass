@@ -29,7 +29,7 @@ public class sevenProject implements Analysis{
 				thisTurtle.setColor(Color.WHITE);
 				thisTurtle.setPenDown(false);
 				turtles.put(new CoordPair(x, y), thisTurtle);
-				// I used the cood pairs just to make it have different keys for the hashSet.
+				// I used the coord pairs just to make it have different keys for the hashSet.
 				// Yay turtles
 			}
 		}
