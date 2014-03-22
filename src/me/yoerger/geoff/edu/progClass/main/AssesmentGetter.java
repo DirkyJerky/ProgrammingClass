@@ -16,10 +16,9 @@ public class AssesmentGetter {
 		
 		System.out.println("And the assignment number (1 - 6, 6 is the 'Big Idea' and 7 is the module project)");
 		int assignmentNum = in.nextInt();
-		Preconditions.checkArgument(assignmentNum >= 1 && assignmentNum <= 6, "Assignment number must be between 1 and 6");
+		Preconditions.checkArgument(assignmentNum >= 1 && assignmentNum <= 7, "Assignment number must be between 1 and 7");
 
 		
-		in.close();
 		
 		Map<Integer, String> moduleNums = new HashMap<>();
 		Map<Integer, String> assignmentNums = new HashMap<>();
