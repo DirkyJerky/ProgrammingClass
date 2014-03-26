@@ -1,12 +1,17 @@
-package me.yoerger.geoff.edu.progClass.assignments.nine;
+package me.yoerger.geoff.edu.progClass.mod9;
 
-import me.yoerger.geoff.edu.progClass.assignments.Analysis;
-import me.yoerger.geoff.edu.progClass.assignments.Printer;
-import me.yoerger.geoff.edu.progClass.mod9.RetrieveData;
-
-public class nineFive implements Analysis {
-
-	public static void main(String[] args) {
+/**
+ * This program retrieves information from a web site.
+ * 
+ * �FLVS 2008 Assignment 09.05 - Code Evaluation 1
+ * 
+ * @author B. Jordan
+ * @version 10/20/08
+ */
+public class RetrieveDataTester
+{
+	public static void main(String[] args)
+	{
 		// String urlString =
 		// "http://www.weather.gov/view/prodsByState.php?state=FL&prodtype=climate";
 		// RetrieveData findData = new RetrieveData(urlString, "JANESVILLE");
@@ -33,12 +38,6 @@ public class nineFive implements Analysis {
 			System.out.println((day + 1) + "  " + maximumTemp[day] + "  "
 			        + minimumTemp[day]);
 		}
-	}
-
-	@Override
-	public void printQuestions(Printer printer) {
-		printer.print("TODO");
-		printer.printAnswer("TODO");
 
 	}
 }
