@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 //import java.util.*;
 //import java.util.List; // resolves problem with java.awt.List and java.util.List
 
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 /**
  * A class that represents a picture. This class inherits from SimplePicture and

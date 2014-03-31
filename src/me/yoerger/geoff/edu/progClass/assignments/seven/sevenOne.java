@@ -3,10 +3,10 @@ package me.yoerger.geoff.edu.progClass.assignments.seven;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Turtle;
 import me.yoerger.geoff.edu.progClass.bookClasses.World;
-import sun.awt.image.ImageFormatException;
 
 public class sevenOne implements Analysis {
 	public static void main(final String[] args) throws ImageFormatException {

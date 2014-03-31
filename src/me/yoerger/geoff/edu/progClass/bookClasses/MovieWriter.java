@@ -10,7 +10,7 @@ import javax.imageio.ImageIO;
 
 import org.monte.media.avi.AVIOutputStream;
 
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 /**
  * Class to write out an AVI or Quicktime movie from a series of JPEG (jpg)

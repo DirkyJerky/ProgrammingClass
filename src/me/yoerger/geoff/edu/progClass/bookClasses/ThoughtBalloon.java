@@ -9,7 +9,7 @@ import java.awt.Point;
 import java.awt.geom.Ellipse2D;
 // import java.util.*;
 
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 /**
  * ThoughtBalloon: this is used to represent objects in comic strips which are

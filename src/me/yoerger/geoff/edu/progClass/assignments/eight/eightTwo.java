@@ -8,7 +8,7 @@ import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.mod8.Effects;
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 public class eightTwo implements Analysis {
 

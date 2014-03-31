@@ -10,7 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 /**
  * Class to display a comic strip. A comic strip has 4 comic panels. Each comic

@@ -15,7 +15,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import sun.awt.image.ImageFormatException;
+import com.google.common.base.Preconditions;
 
 /**
  * A class that represents a simple picture. A simple picture may have an
@@ -516,6 +516,7 @@ public class SimplePicture implements DigitalPicture {
 	 */
 	@Override
 	public boolean load(final String fileName) throws ImageFormatException {
+		Preconditions.checkNotNull(fileName);
 		try {
 			this.loadOrFail(fileName);
 			return true;

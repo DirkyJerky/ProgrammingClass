@@ -2,7 +2,7 @@ package me.yoerger.geoff.edu.progClass.mod8;
 
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 public class Grayscale {
 

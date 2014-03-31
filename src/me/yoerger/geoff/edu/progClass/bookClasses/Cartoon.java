@@ -9,7 +9,7 @@ import java.awt.font.LineMetrics;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
 
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 /**
  * Class to create a cartoon out of a picture

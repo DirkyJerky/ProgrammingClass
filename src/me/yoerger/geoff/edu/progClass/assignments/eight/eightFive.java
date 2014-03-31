@@ -5,10 +5,10 @@ import java.util.Scanner;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
 import me.yoerger.geoff.edu.progClass.mod8.Grayscale;
-import sun.awt.image.ImageFormatException;
 
 public class eightFive implements Analysis {
 

@@ -1,6 +1,6 @@
 package me.yoerger.geoff.edu.progClass.bookClasses;
 
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 public class TurlteDropTest {
 	public static void main(final String[] args) throws ImageFormatException {

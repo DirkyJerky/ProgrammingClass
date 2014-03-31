@@ -16,7 +16,7 @@ import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
 
 import org.imgscalr.Scalr;
 
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 public class nineFour implements Analysis {
 	private final static int TILE_WIDTH = 250;

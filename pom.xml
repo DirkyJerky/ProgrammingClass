@@ -3,6 +3,7 @@
     <groupId>me.yoerger.geoff.edu</groupId>
     <artifactId>progClass</artifactId>
     <version>1.0.0</version>
+    <!--
     <dependencies>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -15,13 +16,9 @@
             <version>2.1.1e</version>
         </dependency>
         <dependency>
-        	<groupId>org.apache.commons</groupId>
-        	<artifactId>common-collections4</artifactId>
-        	<version>4.0</version>
-        </dependency>
-        <dependency>
         	<groupId>org.example</groupId>
         	<artifactId>javazoom</artifactId>
+        	<scope>system</scope>
         	<systemPath>${project.basedir}/lib/javazoom.jar</systemPath>
         	<version>1.0</version>
         </dependency>
@@ -29,9 +26,11 @@
         	<groupId>org.example</groupId>
         	<artifactId>monte-cc</artifactId>
         	<version>1.0</version>
+        	<scope>system</scope>
         	<systemPath>${project.basedir}/lib/monte-cc.jar</systemPath>
         </dependency>
     </dependencies>
+    -->
     <plugins>
         <plugin>
             <artifactId>maven-compiler-plugin</artifactId>

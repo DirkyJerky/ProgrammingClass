@@ -12,7 +12,7 @@ import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
 import me.yoerger.geoff.edu.progClass.mod9.SafeCloser;
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 import com.google.common.base.Preconditions;
 

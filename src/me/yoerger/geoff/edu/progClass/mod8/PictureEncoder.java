@@ -2,7 +2,7 @@ package me.yoerger.geoff.edu.progClass.mod8;
 
 import java.io.File;
 
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
 

@@ -33,7 +33,7 @@ import javax.swing.JViewport;
 import javax.swing.WindowConstants;
 import javax.swing.border.LineBorder;
 
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 /**
  * Displays a picture and lets you explore the picture by displaying the x, y,

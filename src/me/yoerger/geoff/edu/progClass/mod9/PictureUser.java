@@ -2,8 +2,8 @@ package me.yoerger.geoff.edu.progClass.mod9;
 
 import java.awt.Color;
 
-import sun.awt.image.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 
 public class PictureUser {

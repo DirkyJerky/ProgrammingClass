@@ -1,6 +1,7 @@
 .classpath
 .project
 *.screenflow
+target/
 # Our recording
 
 # From github.com/github/gitignore

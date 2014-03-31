@@ -3,7 +3,6 @@ package me.yoerger.geoff.edu.progClass.bookClasses;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 
-import sun.awt.image.ImageFormatException;
 
 /**
  * Interface to describe a digital picture.  A digital picture can have a 

@@ -6,7 +6,7 @@ import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
 import me.yoerger.geoff.edu.progClass.mod8.PictureEncoder;
-import sun.awt.image.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 public class eightFour implements Analysis {
 
