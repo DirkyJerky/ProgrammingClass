@@ -10,26 +10,49 @@ import me.yoerger.geoff.edu.progClass.bookClasses.Turtle;
 import me.yoerger.geoff.edu.progClass.bookClasses.World;
 import me.yoerger.geoff.edu.progClass.mod7.Range;
 
+/**
+ * Assignment 8.1
+ *
+ */
 public class eightOne implements Analysis{
 
+	/**
+	 * The starting length of the fractal segments
+	 */
 	final static int LEN = 100;
+	/**
+	 * The amount of time to wait between animations
+	 */
 	final static int TIMEOUT = 1000;
+	/**
+	 * The amount to multipy the scale by each frame
+	 */
 	final static float SCALE = 0.75F;
+	/**
+	 * The color to make the fractal
+	 */
 	final static Color FRACTAL_COLOR = Color.red;
+	/**
+	 * The width of the fractal lines
+	 */
 	final static int FRACTAL_WIDTH = 2;
 	
+	/**
+	 * @param args
+	 * @throws InterruptedException if bad stuff happens in the thread
+	 */
 	@SuppressWarnings("unused") // For the console clearer below.
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws InterruptedException {
 		
 //		System.out.println("The other threads dont like all these turtles"
 //				+ " drawing over each other,\nJust ignore the oncomming spam");
-		final World world = new World();
-		final Turtle starter = new Turtle(300, 400, world);
+		World world = new World();
+		Turtle starter = new Turtle(300, 400, world);
 		starter.setPenColor(FRACTAL_COLOR);
 		starter.hide();
 		starter.setPenWidth(FRACTAL_WIDTH);
 		int phase = LEN;
-		final Set<Turtle> turtles = new HashSet<>();
+		Set<Turtle> turtles = new HashSet<>();
 		turtles.add(starter);
 		
 		while(world.isShowing() && phase >= 10) {
@@ -57,6 +80,12 @@ public class eightOne implements Analysis{
 		
 	}
 	
+	/**
+	 * Duplicate a turtle
+	 * @param t the original turtle
+	 * @param w the world to copy the new turtle to
+	 * @return the copied turtle
+	 */
 	public static Turtle copy(Turtle t, World w) {
 
 		Turtle copy = new Turtle(t.getXPos(), t.getYPos(), w);
@@ -64,12 +93,19 @@ public class eightOne implements Analysis{
 		return copy;
 	}
 	
+	/**
+	 * Reset a turtles attributes
+	 * @param t The turtle that needs to be normalized
+	 */
 	public static void normalize(Turtle t) {
 		t.setPenColor(FRACTAL_COLOR);
 		t.setPenWidth(FRACTAL_WIDTH);
 //		t.hide();
 	}
 
+	/*
+	 * @see me.yoerger.geoff.edu.progClass.assignments.Analysis#printQuestions(me.yoerger.geoff.edu.progClass.assignments.Printer)
+	 */
 	@Override
 	public void printQuestions(Printer printer) {
 		printer.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");

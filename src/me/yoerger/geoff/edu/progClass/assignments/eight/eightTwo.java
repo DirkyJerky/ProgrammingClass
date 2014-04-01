@@ -10,9 +10,17 @@ import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.mod8.Effects;
 import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
+/**
+ * Assignment 8.2
+ *
+ */
 public class eightTwo implements Analysis {
 
-	public static void main(final String[] args) throws ImageFormatException {
+	/**
+	 * @param args
+	 * @throws ImageFormatException if the file selected is not an image or no file was selected
+	 */
+	public static void main(String[] args) throws ImageFormatException {
 		// System.out.println("Close window to go onto the next picture");
 		System.out.println("Please select your picture");
 		// System.out.println("P:\\Programming\\Externals\\Refs\\Effects.jpg");
@@ -36,6 +44,9 @@ public class eightTwo implements Analysis {
 
 	}
 
+	/* (non-Javadoc)
+	 * @see me.yoerger.geoff.edu.progClass.assignments.Analysis#printQuestions(me.yoerger.geoff.edu.progClass.assignments.Printer)
+	 */
 	@Override
 	public void printQuestions(final Printer printer) {
 

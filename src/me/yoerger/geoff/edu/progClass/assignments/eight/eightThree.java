@@ -13,8 +13,16 @@ import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
 
+/**
+ * Assignment 8.3
+ *
+ */
 public class eightThree implements Analysis{
 	
+	/**
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		
 		System.out.println("Please select a folder with your pictures");
@@ -64,8 +72,39 @@ public class eightThree implements Analysis{
 		
 	}
 
+	/* (non-Javadoc)
+	 * @see me.yoerger.geoff.edu.progClass.assignments.Analysis#printQuestions(me.yoerger.geoff.edu.progClass.assignments.Printer)
+	 */
 	@Override
 	public void printQuestions(Printer printer) {
+		printer.print("Describe the main point of this assignment. (Required)");
+		printer.printAnswer("Stitch together a collection of images");
+		
+		printer.print("Discuss how this assignment relates to a real-life situation. (Required)");
+		printer.printAnswer("Panoramas are made by doing just this");
+		
+		printer.print("Reflect on your growth as a programmer. (Required)");
+		printer.printAnswer("I learned how make and order a set of objects based on one of its attributes");
+		
+		printer.print("Describe the biggest problem encountered and how it was fixed.");
+		printer.printAnswer("Getting the pictures together in order; I was using a list "
+				+ "that was ordered based on a random hash, which isnt really ordering at all");
+		
+		printer.print("Describe at least one thing that will be done differently in the future.");
+		printer.printAnswer("Allow the user to order the pictures");
+		
+		printer.print("Suggest how this assignment could be extended.");
+		printer.printAnswer("Add a way to overlap images that have a common border");
+		
+		printer.print("How could you modify this program to produce a collage of separate images?");
+		printer.printAnswer("Have an option to split the images?");
+		
+		printer.print("What question(s) of your own did you answer while writing this program?");
+		printer.printAnswer("How to order a java.util.List");
+		
+		printer.print("What unanswered question(s) do you have after writing this program?  ");
+		printer.printAnswer("How to detect if an image overlaps? Whats the best algorithm?");
+		
 		
 	}
 }

@@ -10,9 +10,18 @@ import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
 import me.yoerger.geoff.edu.progClass.mod8.Grayscale;
 
+/**
+ * Assignment 8.5
+ * 
+ * Apply color scales to a grayscale picture.
+ *
+ */
 public class eightFive implements Analysis {
-
-	public static void main(final String[] args) throws ImageFormatException {
+	/**
+	 * @param args
+	 * @throws ImageFormatException if no image is selected or the file is not an image
+	 */
+	public static void main(String[] args) throws ImageFormatException {
 		System.out
 				.println("Select your grayscale picture or hit cancel to select a picture to be grayscaled.");
 		String picLoc = FileChooser.pickAFile();
@@ -47,9 +56,12 @@ public class eightFive implements Analysis {
 
 	}
 
+	/* 
+	 * @see me.yoerger.geoff.edu.progClass.assignments.Analysis#printQuestions(me.yoerger.geoff.edu.progClass.assignments.Printer)
+	 */
 	@Override
 	public void printQuestions(final Printer printer) {
-		printer.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
+		printer.print("Describe the main point of this assignment. (Required)");
 		printer.printAnswer("Apply color scales to a grayscale picture.");
 
 		printer.print("Discuss how this assignment relates to a real-life situation. (Required)");

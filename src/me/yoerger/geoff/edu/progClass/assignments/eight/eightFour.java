@@ -8,9 +8,17 @@ import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
 import me.yoerger.geoff.edu.progClass.mod8.PictureEncoder;
 import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
+/**
+ * Assignment 8.4
+ *
+ */
 public class eightFour implements Analysis {
 
-	public static void main(final String[] args) throws ImageFormatException {
+	/**
+	 * @param args
+	 * @throws ImageFormatException if no file is selected or the file is not an image
+	 */
+	public static void main(String[] args) throws ImageFormatException {
 		System.out.println("Please select a picture.");
 		String pictureLoc = FileChooser.pickAFile();
 		if ((pictureLoc == null) || !pictureLoc.matches(".*\\.jpe?g")) {
@@ -46,6 +54,9 @@ public class eightFour implements Analysis {
 		System.exit(0);
 	}
 
+	/* 
+	 * @see me.yoerger.geoff.edu.progClass.assignments.Analysis#printQuestions(me.yoerger.geoff.edu.progClass.assignments.Printer)
+	 */
 	@Override
 	public void printQuestions(final Printer printer) {
 		printer.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");

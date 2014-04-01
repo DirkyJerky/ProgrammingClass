@@ -16,12 +16,25 @@ import me.yoerger.geoff.edu.progClass.bookClasses.World;
 import me.yoerger.geoff.edu.progClass.mod7.Range;
 
 
-public class eightProject implements Analysis{
+/**
+ * Unit Project for module 8
+ */
+public class eightProject implements Analysis {
 	
+	/**
+	 * The pause duration between animations
+	 */
 	public final static long TIMEOUT = 250;
+	/**
+	 * How long to show the window after the animation is done
+	 */
 	public final static long FINAL_TIMEOUT = 5000;
+	/**
+	 * @param args
+	 * @throws InterruptedException if bad stuff happens in the thread
+	 */
 	@SuppressWarnings("unused")
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws InterruptedException {
 		Scanner in = new Scanner(System.in);
 		Printer printer = new Printer();
 //		printer.print("How much iterations do you want the fractal to go for?");
@@ -98,10 +111,12 @@ public class eightProject implements Analysis{
 			Thread.sleep(TIMEOUT);
 		}
 		finish();
-		System.exit(0);
 		
 	}
 
+	/* (non-Javadoc)
+	 * @see me.yoerger.geoff.edu.progClass.assignments.Analysis#printQuestions(me.yoerger.geoff.edu.progClass.assignments.Printer)
+	 */
 	public void printQuestions(Printer printer) {
 		printer.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
 		printer.printAnswer("Extend a previous assignment or make a new challenge, I did the first.");
@@ -136,18 +151,33 @@ public class eightProject implements Analysis{
 		
 		
 	}
+	/**
+	 * Reset a turtles attributes to default
+	 * @param t the turtle to normalize
+	 * @param phase The phase number (used to change the color)
+	 */
 	public static void normalize(Turtle t, int phase) {
 		t.setPenColor(new Color(0, (phase * 10 >= 255 ? 255 : phase * 10), (phase * 10 >= 255 ? 255 : phase * 10)));
 		t.setPenWidth(1);
 		t.hide();
 	}
+	/**
+	 * Duplicate a turtle
+	 * @param t The original turtle
+	 * @param w The world to copy the new turtle to
+	 * @return  The new copied turtle
+	 */
 	public static Turtle copy(Turtle t, World w) {
 
 		Turtle copy = new Turtle(t.getXPos(), t.getYPos(), w);
 		copy.turn(t.getHeading());
 		return copy;
 	}
-	public static void finish() throws Exception {
+	/**
+	 * Finish up the program
+	 * @throws InterruptedException
+	 */
+	public static void finish() throws InterruptedException {
 		System.out.println("\n\n\n\n\n\n\n\n\n\n"); // Clear the screen a bit.
 		System.out.println("Just ignore all that exception spam above me.");
 		Thread.sleep(FINAL_TIMEOUT);
