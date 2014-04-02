@@ -26,9 +26,16 @@ import org.jfree.ui.GradientPaintTransformType;
 import org.jfree.ui.StandardGradientPaintTransformer;
 import org.joda.time.DateTime;
 
+/**
+ * Assignment 9.5
+ *
+ */
 public class nineFive implements Analysis {
 	private static String city = "MADISON";
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// String urlString =
 		// "http://www.weather.gov/view/prodsByState.php?state=FL&prodtype=climate";

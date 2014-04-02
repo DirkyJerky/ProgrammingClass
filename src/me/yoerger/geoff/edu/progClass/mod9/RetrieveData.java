@@ -14,6 +14,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 
+/**
+ * @author yoerggeo000
+ * @since Assignment 9.5
+ * A class that crawls a specific website for information
+ * NOTE: Only usable on http://www.nws.noaa.gov/xml/tpex/scs.php
+ */
 public class RetrieveData
 {
 	private String city = null;
@@ -22,12 +28,20 @@ public class RetrieveData
 	private int[] maxTemp = new int[3];
 	private int[] minTemp = new int[3];
 
+	/**
+	 * @param url The url used to crawl the weather website for data
+	 * @param loc
+	 */
 	public RetrieveData(String url, String loc)
 	{
 		this.city = loc;
 		this.urlStr = url;
 	}
 
+	/**
+	 * Get the data from the website
+	 * @return A dummy string used to show that we got data, it has no importance
+	 */
 	public String crawlWebSite()
 	{
 
@@ -82,11 +96,19 @@ public class RetrieveData
 		return this.line;
 	}
 
+	/**
+	 * Get the found maximum temperatures after doing {@link #crawlWebSite()}
+	 * @return The maximum temperatures found
+	 */
 	public int[] getMaxTemp()
 	{
 		return this.maxTemp;
 	}
 
+	/**
+	 * Get the found minimum temperatures after doing {@link #crawlWebSite()}
+	 * @return The minimum temperatures found
+	 */
 	public int[] getMinTemp()
 	{
 		return this.minTemp;
