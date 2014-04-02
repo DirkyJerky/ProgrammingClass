@@ -12,6 +12,11 @@ import com.google.common.base.Preconditions;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
 
 
+/**
+ * A runnable class so you can easily copy one file from a place to another
+ * @author yoerggeo000
+ *
+ */
 public class FileCopier {
 
 	public static void main(String[] args) throws IOException {

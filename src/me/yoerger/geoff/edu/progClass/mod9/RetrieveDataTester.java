@@ -3,7 +3,7 @@ package me.yoerger.geoff.edu.progClass.mod9;
 /**
  * This program retrieves information from a web site.
  * 
- * �FLVS 2008 Assignment 09.05 - Code Evaluation 1
+ * 2008 Assignment 09.05 - Code Evaluation 1
  * 
  * @author B. Jordan
  * @version 10/20/08
