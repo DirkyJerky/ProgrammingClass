@@ -6,7 +6,17 @@ import java.util.Scanner;
 
 import com.google.common.base.Preconditions;
 
+/**
+ * Prompt for an assignment number and check that its a valid one
+ * @author yoerggeo000
+ *
+ */
 public class AssesmentGetter {
+	/**
+	 * @param in a Scanner
+	 * @return THe class for the assignment number prompted for
+	 * @throws Exception If the user enters a wrong value
+	 */
 	public static Class<?> getAssignment(Scanner in) throws Exception {
 		System.out.println("Please enter 2 integers for the assignment:");
 		

@@ -522,10 +522,7 @@ public class SimplePicture implements DigitalPicture {
 			return true;
 
 		} catch (Exception ex) {
-			System.out.println("There was an error trying to open " + fileName);
-			this.bufferedImage = new BufferedImage(600, 200,
-					BufferedImage.TYPE_INT_RGB);
-			throw new ImageFormatException("Not an image!");
+			throw new ImageFormatException("Not an image!", ex);
 		}
 
 	}

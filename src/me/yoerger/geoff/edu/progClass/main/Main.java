@@ -2,7 +2,16 @@ package me.yoerger.geoff.edu.progClass.main;
 
 import java.util.Scanner;
 
+/**
+ * Prompts the user for which assignment to run / show questions for
+ * @author yoerggeo000
+ *
+ */
 public class Main {
+	/**
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);

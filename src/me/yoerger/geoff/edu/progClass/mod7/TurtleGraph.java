@@ -5,38 +5,83 @@ import java.util.Stack;
 
 import me.yoerger.geoff.edu.progClass.bookClasses.Turtle;
 
+/**
+ * Used to represent and display a bar graph made with turtle graphics
+ * @author yoerggeo000
+ * @since Module 7
+ */
 public class TurtleGraph {
 	private Turtle turtle;
 	private int Xcoord;
 	private int Ycoord;
+	/**
+	 * The length in pixels between each dataset in the bar graph
+	 */
 	public final int PADDING = 25;
+	/**
+	 * The width in pixels that the data bars are wide
+	 */
 	public final int DATA_WIDTH = 50;
+	/**
+	 * The line with of the border of the graph
+	 */
 	public final int BORDER_WIDTH = 5;
+	/**
+	 * The line with of the data bars
+	 */
 	public final int DATA_LINE_WIDTH = 10;
+	/**
+	 * The color the border line is drawn with
+	 */
 	public final Color BORDER_COLOR = Color.BLACK;
+	/**
+	 * The color the data bars are drawn with
+	 */
 	public final Color DATA_COLOR = Color.RED;
-	public final int LABEL_PADDING = 15;
 	
+	/**
+	 * @param turtle The turtle used to graph
+	 */
 	public TurtleGraph(Turtle turtle) {
 		this.turtle = turtle;
 	}
 
+	/**
+	 * @return The Y coord that the graph is going to be placed at
+	 * @see #setYcoord()
+	 */
 	public int getYcoord() {
 		return Ycoord;
 	}
 
+	/**
+	 * @param ycoord The Y coord that the graph is going to be placed at
+	 */
 	public void setYcoord(int ycoord) {
 		this.Ycoord = ycoord;
 	}
 
+	/**
+	 * @return The X coord that the graph is going to be placed at
+	 * @see #setXcoord()
+	 */
+
 	public int getXcoord() {
 		return Xcoord;
 	}
-	
+
+	/**
+	 * @param xcoord The X coord that the graph is going to be placed at
+	 */
 	public void setXcoord(int xcoord) {
 		this.Xcoord = xcoord;
 	}
 	
+	/**
+	 * @param data The list of data to be plotted
+	 * @param height The height of the graph
+	 * @param scale How much pixels one unit of data is in height
+	 */
 	public void draw(Stack<Integer> data, int height, int scale) {
 		this.turtle.setPenDown(false);
 		int width = (DATA_WIDTH * data.size()) + (PADDING * (data.size() + 1));

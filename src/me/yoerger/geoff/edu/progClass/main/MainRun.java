@@ -3,8 +3,17 @@ package me.yoerger.geoff.edu.progClass.main;
 import java.lang.reflect.Method;
 import java.util.Scanner;
 
+/**
+ * Used to run assignments
+ * @author yoerggeo000
+ */
 public class MainRun {
 
+	/**
+	 * @param ourArgs
+	 * @throws Exception
+	 * 
+	 */
 	public static void main(String[] ourArgs) throws Exception {
 		Scanner in = new Scanner(System.in);
 		Class<?> mainClazz = AssesmentGetter.getAssignment(in);
@@ -26,7 +35,6 @@ public class MainRun {
 		// mainClazz.getName());
 		// }
 		// }
-		System.exit(0); // Terminate and cleanup
 	}
 
 }

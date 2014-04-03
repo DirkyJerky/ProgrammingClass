@@ -5,6 +5,11 @@ import java.util.Scanner;
 
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 
+/**
+ * Used to show PMR questions of an assignment
+ * @author yoerggeo000
+ *
+ */
 public class MainPMR {
 
 	public static void main(String[] ourArgs) throws Exception {
@@ -25,7 +30,6 @@ public class MainPMR {
 				System.out.println("No analysis questions present in class " + mainClazz.getName());
 			}
 //		}
-		System.exit(0); // Terminate and cleanup
 	}
 
 }

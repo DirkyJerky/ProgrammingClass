@@ -7,6 +7,11 @@ import java.util.List;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
 
+/**
+ * Used to apply color effects to a Picture
+ * @author yoerggeo000
+ * @since Module 8
+ */
 public class Effects {
 	
 	private Picture picture;
@@ -15,7 +20,15 @@ public class Effects {
 		this.picture = picture;
 	}
 	
-	Pixel pixel;
+	/**
+	 * Apply a color effect
+	 * 
+	 * effect is in the form of 'A, B, C' where A is the number of red to add to each pixel,
+	 * B is blue, C is bleu, etc
+	 * You can also just pass in 'inv' to invert the whole picture
+	 * @param effect A string form of a triple tuplet
+	 * @return The effect applied picture
+	 */
 	public Picture apply(String effect) {
 		List<Integer> attributes = new ArrayList<>();
 		int red;

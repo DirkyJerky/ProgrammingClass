@@ -7,6 +7,9 @@ public class ImageFormatException extends Exception {
 	public ImageFormatException(String eMessage) {
 		super(eMessage);
 	}
+	public ImageFormatException(String eMessage, Throwable cause) {
+		super(eMessage, cause);
+	}
 	
 
 }
