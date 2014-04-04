@@ -1,9 +1,9 @@
 package me.yoerger.geoff.edu.progClass.mod6;
 
 /**
+ * A class to hold attributes of a car. 
  * @author yoerggeo000
  * @since Assignment 6.3
- * A class to hold attributes of a car. 
  * @see UsedCar
  */
 public abstract class Car {

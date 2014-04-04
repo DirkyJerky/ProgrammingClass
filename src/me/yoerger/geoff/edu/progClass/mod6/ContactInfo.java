@@ -3,10 +3,24 @@ package me.yoerger.geoff.edu.progClass.mod6;
 import me.yoerger.geoff.edu.progClass.mod8.Printable;
 
 public class ContactInfo implements Printable {
+	/**
+	 * The person represented by this ContactInfo's full name
+	 */
 	public String name;
+	/**
+	 * Their home phone number
+	 */
 	public long homePhone;
+	/**
+	 * Their cell phone number
+	 */
 	public long cellPhone;
 	
+	/**
+	 * @param name The name for the persont this ContactInfo represents
+	 * @param homePhone Their home phone number
+	 * @param cellPhone Their cell phone number
+	 */
 	public ContactInfo(String name, long homePhone, long cellPhone) {
 		this.name = name;
 		this.cellPhone = cellPhone;
