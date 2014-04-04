@@ -54,7 +54,7 @@ public class eightFour implements Analysis {
 		System.exit(0);
 	}
 
-	/* 
+	/*
 	 * @see me.yoerger.geoff.edu.progClass.assignments.Analysis#printQuestions(me.yoerger.geoff.edu.progClass.assignments.Printer)
 	 */
 	@Override
@@ -78,7 +78,7 @@ public class eightFour implements Analysis {
 		printer.print("Suggest how this assignment could be extended.");
 		printer.printAnswer("Find out a way to encode images without it ruining  a section of the image.");
 
-		printer.print("Why isn’t the secret message actually visible in the image?");
+		printer.print("Why isn't the secret message actually visible in the image?");
 		printer.printAnswer("Each image is one part of a pixel, pixels are only one color.");
 
 		printer.print("How could you hide a solid white rectangle within an image?");
