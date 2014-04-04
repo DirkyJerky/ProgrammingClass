@@ -3,6 +3,10 @@ package me.yoerger.geoff.edu.progClass.assignments.nine;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 
+/**
+ * Project for module 9
+ * @see nineSix
+ */
 public class nineProject implements Analysis{
 	
 	public static void main(String[] args) {

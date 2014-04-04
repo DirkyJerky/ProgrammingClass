@@ -17,6 +17,11 @@ import java.util.Scanner;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 
+/**
+ * Project for Module 6
+ * Poll a JDK's javadoc page and return if a specified class exists
+ * @see sixSix
+ */
 public class sixProject implements Analysis{
 
 	@SuppressWarnings("unused")

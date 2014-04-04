@@ -7,6 +7,11 @@ import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.Turtle;
 import me.yoerger.geoff.edu.progClass.bookClasses.World;
 
+/**
+ * Assignment 7.2
+ * Draw a turtle, with a turtle
+ *
+ */
 public class sevenTwo implements Analysis{
 
 	public static void main(String[] args) {

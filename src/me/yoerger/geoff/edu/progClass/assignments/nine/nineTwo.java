@@ -12,6 +12,11 @@ import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.mod7.RandomColor;
 import me.yoerger.geoff.edu.progClass.mod9.Drawer;
 
+/**
+ * Assignment 9.2
+ * Draw a face
+ * @see Drawer
+ */
 public class nineTwo implements Analysis {
 
 	public static void main(String[] args) throws Exception {
@@ -23,6 +28,9 @@ public class nineTwo implements Analysis {
 		System.exit(0);
 	}
 
+	/**
+	 * @param pictre The picture to draw a random face on
+	 */
 	public static void drawTest(Picture pictre) {
 		final Drawer drawer = new Drawer(pictre);
 		Runnable run = new Runnable() {

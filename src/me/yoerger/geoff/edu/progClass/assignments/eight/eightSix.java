@@ -6,6 +6,8 @@ import me.yoerger.geoff.edu.progClass.mod6.BigIdea;
 
 /**
  * Project Proposal for Module 8 unit project
+ * @see BigIdea
+ * @see eightProject
  *
  */
 public class eightSix implements Analysis {

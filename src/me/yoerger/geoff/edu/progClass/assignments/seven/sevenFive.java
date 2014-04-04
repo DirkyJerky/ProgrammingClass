@@ -13,6 +13,11 @@ import me.yoerger.geoff.edu.progClass.mod7.RandomColor;
 
 import com.google.common.base.Preconditions;
 
+/**
+ * Assignment 7.5
+ * Make a simple animation in a box
+ * @see RandomColor
+ */
 public class sevenFive implements Analysis{
 	public static void main(String[] args) throws Exception {
 		

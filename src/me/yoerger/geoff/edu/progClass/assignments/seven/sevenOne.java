@@ -8,6 +8,10 @@ import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Turtle;
 import me.yoerger.geoff.edu.progClass.bookClasses.World;
 
+/**
+ * Assignment 7.1
+ * Make a turtle navigate a maze
+ */
 public class sevenOne implements Analysis {
 	public static void main(final String[] args) throws ImageFormatException {
 		int pixels = 0;

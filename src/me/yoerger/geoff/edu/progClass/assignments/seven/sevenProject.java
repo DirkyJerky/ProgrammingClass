@@ -13,13 +13,19 @@ import me.yoerger.geoff.edu.progClass.mod7.CoordPair;
 import me.yoerger.geoff.edu.progClass.mod7.RandomColor;
 import me.yoerger.geoff.edu.progClass.mod7.Range;
 
+/**
+ * Project for module 7
+ * @author yoerggeo000
+ * @see sevenSix
+ * @see RandomColor
+ */
 public class sevenProject implements Analysis{
-	final static int PADDING = 50;
-	final static int SCALE = 40;
-	final static int TIMEOUT = 1000; // Millis
-	final static Random random = new Random(System.nanoTime());
-	final static World world = new World();
-	static Map<CoordPair, Turtle> turtles = new HashMap<>();
+	private final static int PADDING = 50;
+	private final static int SCALE = 40;
+	private final static int TIMEOUT = 1000; // Millis
+	private final static Random random = new Random(System.nanoTime());
+	private final static World world = new World();
+	private static Map<CoordPair, Turtle> turtles = new HashMap<>();
 
 	public static void main(String[] args) {
 		world.setBackground(Color.BLACK); // Should work, dont know why.
@@ -53,6 +59,9 @@ public class sevenProject implements Analysis{
 		}
 		System.exit(0);
 	}
+	/**
+	 * @return A random color of the rainbow
+	 */
 	public static Color randomColor() {
 		return RandomColor.make();
 	}

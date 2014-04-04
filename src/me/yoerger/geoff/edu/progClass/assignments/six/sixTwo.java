@@ -5,6 +5,11 @@ import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.mod6.AdultContactInfo;
 import me.yoerger.geoff.edu.progClass.mod6.ContactInfo;
 
+/**
+ * Assignment 6.2
+ * Print me and my parents contact information
+ * @see ContactInfo, AdultContactInfo
+ */
 public class sixTwo implements Analysis {
 
 	public static void main(String[] args) {

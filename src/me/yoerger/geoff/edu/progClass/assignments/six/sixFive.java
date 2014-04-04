@@ -8,6 +8,11 @@ import me.yoerger.geoff.edu.progClass.mod6.MovieTicket;
 import me.yoerger.geoff.edu.progClass.mod6.MovieUser;
 import me.yoerger.geoff.edu.progClass.mod6.MovieUserManager;
 
+/**
+ * Assignment 6.5
+ * Register for the movies
+ *
+ */
 public class sixFive implements Analysis {
 
 

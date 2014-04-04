@@ -10,7 +10,13 @@ import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.Turtle;
 import me.yoerger.geoff.edu.progClass.bookClasses.World;
+import me.yoerger.geoff.edu.progClass.mod7.RandomColor;
 
+/**
+ * Assignment 7.3
+ * Make random assortments of colored boxes and lines
+ * @see RandomColor
+ */
 public class sevenThree implements Analysis{
 
 	public static void main(String[] args) {

@@ -8,6 +8,11 @@ import me.yoerger.geoff.edu.progClass.bookClasses.Turtle;
 import me.yoerger.geoff.edu.progClass.bookClasses.World;
 import me.yoerger.geoff.edu.progClass.mod7.TurtleGraph;
 
+/**
+ * Assignment 7.4
+ * Make a turtle graph showing results of a survey on what Operating System people prefer
+ * @see TurtleGraph
+ */
 public class sevenFour implements Analysis{
 	public static void main(String[] args) {
 		World world = new World();

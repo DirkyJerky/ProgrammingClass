@@ -9,6 +9,10 @@ import java.util.HashMap;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 
+/**
+ * Assignment 6.4
+ * Make a generatable scam letter
+ */
 public class sixFour implements Analysis{
 
 	public static void main(String[] args) {

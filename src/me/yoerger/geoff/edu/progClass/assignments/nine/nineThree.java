@@ -11,10 +11,14 @@ import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
 import me.yoerger.geoff.edu.progClass.mod7.RandomColor;
 import me.yoerger.geoff.edu.progClass.mod9.Drawer;
-import me.yoerger.geoff.edu.progClass.mod9.PictureUser;
 
-public class nineThree extends PictureUser implements Analysis {
-	public final static int TILE_WIDTH = 100;
+/**
+ * Assignment 9.3
+ * 
+ *
+ */
+public class nineThree implements Analysis {
+	private final static int TILE_WIDTH = 100;
 
 	public static void main(final String[] args) throws InterruptedException {
 		Picture tile = new Picture(TILE_WIDTH, TILE_WIDTH);

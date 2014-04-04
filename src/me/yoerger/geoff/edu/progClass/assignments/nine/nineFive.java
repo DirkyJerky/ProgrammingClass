@@ -28,7 +28,7 @@ import org.joda.time.DateTime;
 
 /**
  * Assignment 9.5
- *
+ * Prompt a weather website for information and graph that data.
  */
 public class nineFive implements Analysis {
 	private static String city = "MADISON";

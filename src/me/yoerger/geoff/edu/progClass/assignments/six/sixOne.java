@@ -3,6 +3,10 @@ package me.yoerger.geoff.edu.progClass.assignments.six;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 
+/**
+ * Assignment 6.1
+ * Give a pointer to the assignment
+ */
 public class sixOne implements Analysis {
 
 	public static void main(String[] args) {

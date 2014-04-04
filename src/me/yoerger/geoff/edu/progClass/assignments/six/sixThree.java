@@ -5,6 +5,10 @@ import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.mod6.UsedCar;
 
+/**
+ * Assignment 6.3
+ * @see UsedCar
+ */
 public class sixThree implements Analysis{
 
 	public static void main(String[] args) {

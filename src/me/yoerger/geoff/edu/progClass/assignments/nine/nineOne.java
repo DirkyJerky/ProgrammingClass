@@ -16,6 +16,10 @@ import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 import com.google.common.base.Preconditions;
 
+/**
+ * Assignment 9.1
+ * Create a green screen picture
+ */
 public class nineOne implements Analysis {
 
 	public static void main(final String[] args) throws ImageFormatException {
@@ -47,7 +51,6 @@ public class nineOne implements Analysis {
 		int limitTop = (int) trunc((backgroundPic.getHeight() - greenScreenedPic
 				.getHeight()) / 2);
 
-		// TODO Refactor out
 		// Find the main color of the green screen
 		Map<Color, Integer> numColors = new HashMap<>();
 

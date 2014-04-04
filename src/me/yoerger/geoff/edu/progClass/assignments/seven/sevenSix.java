@@ -4,6 +4,11 @@ import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.mod6.BigIdea;
 
+/**
+ * Project Proposal for Module 7
+ * 
+ * @see sevenProject
+ */
 public class sevenSix implements Analysis{
 
 	public static void main(String[] args) {

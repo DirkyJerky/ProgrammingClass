@@ -18,6 +18,10 @@ import org.imgscalr.Scalr;
 
 import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
+/**
+ * Assignemnt 9.4
+ * 
+ */
 public class nineFour implements Analysis {
 	private final static int TILE_WIDTH = 250;
 	private static Picture ERROR_PICTURE = new Picture(TILE_WIDTH, TILE_WIDTH);
@@ -26,6 +30,11 @@ public class nineFour implements Analysis {
 		ERROR_PICTURE.drawString("No Picture", 25, 25);
 	}
 
+	/**
+	 * Represents the 4 corners of a parellelogram
+	 * @author yoerggeo000
+	 *
+	 */
 	public enum Corner {
 		TOP_LEFT(0, 0),
 		TOP_RIGHT(1, 0),
@@ -40,10 +49,18 @@ public class nineFour implements Analysis {
 			this.yScale = yScale;
 		}
 
+		/**
+		 * @param scale The multiplier
+		 * @return scale if the corner is on the right, otherwise 0
+		 */
 		public int getX(int scale) {
 			return this.xScale * scale;
 		}
 
+		/**
+		 * @param scale The multiplier
+		 * @return scale if the corner is on the bottom, otherwise 0
+		 */
 		public int getY(int scale) {
 			return this.yScale * scale;
 		}
