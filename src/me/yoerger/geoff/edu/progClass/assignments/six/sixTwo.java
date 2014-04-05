@@ -6,23 +6,27 @@ import me.yoerger.geoff.edu.progClass.mod6.AdultContactInfo;
 import me.yoerger.geoff.edu.progClass.mod6.ContactInfo;
 
 /**
- * Assignment 6.2
- * Print me and my parents contact information
- * @see ContactInfo, AdultContactInfo
+ * Assignment 6.2 Print me and my parents contact information
+ * 
+ * @see ContactInfo
+ * @see AdultContactInfo
  */
 public class sixTwo implements Analysis {
 
 	public static void main(String[] args) {
 		// Me
 		ContactInfo geoff = new ContactInfo("Geoff Yoerger", 6088826078L, 0);
-		AdultContactInfo mom = new AdultContactInfo("Ann Larson", geoff.homePhone, 6084439950L, 0);
-		AdultContactInfo dad = new AdultContactInfo("Quentin Yoerger", geoff.homePhone, 6084495261L, 0);
+		AdultContactInfo mom = new AdultContactInfo("Ann Larson",
+		        geoff.homePhone, 6084439950L, 0);
+		AdultContactInfo dad = new AdultContactInfo("Quentin Yoerger",
+		        geoff.homePhone, 6084495261L, 0);
 		// Dont know my parents work phone off the top of my head.
 		geoff.print();
 		mom.print();
 		dad.print();
 	}
-	
+
+	@Override
 	public void printQuestions(Printer p) {
 		p.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment.");
 		p.printAnswer("Make a simple contact information printer");

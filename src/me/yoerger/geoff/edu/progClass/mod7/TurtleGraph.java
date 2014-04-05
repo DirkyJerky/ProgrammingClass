@@ -7,6 +7,7 @@ import me.yoerger.geoff.edu.progClass.bookClasses.Turtle;
 
 /**
  * Used to represent and display a bar graph made with turtle graphics
+ * 
  * @author yoerggeo000
  * @since Module 7
  */
@@ -38,9 +39,10 @@ public class TurtleGraph {
 	 * The color the data bars are drawn with
 	 */
 	public final Color DATA_COLOR = Color.RED;
-	
+
 	/**
-	 * @param turtle The turtle used to graph
+	 * @param turtle
+	 *            The turtle used to graph
 	 */
 	public TurtleGraph(Turtle turtle) {
 		this.turtle = turtle;
@@ -48,14 +50,15 @@ public class TurtleGraph {
 
 	/**
 	 * @return The Y coord that the graph is going to be placed at
-	 * @see #setYcoord()
+	 * @see #setYcoord(int)
 	 */
 	public int getYcoord() {
-		return Ycoord;
+		return this.Ycoord;
 	}
 
 	/**
-	 * @param ycoord The Y coord that the graph is going to be placed at
+	 * @param ycoord
+	 *            The Y coord that the graph is going to be placed at
 	 */
 	public void setYcoord(int ycoord) {
 		this.Ycoord = ycoord;
@@ -63,35 +66,44 @@ public class TurtleGraph {
 
 	/**
 	 * @return The X coord that the graph is going to be placed at
-	 * @see #setXcoord()
+	 * @see #setXcoord(int)
 	 */
 
 	public int getXcoord() {
-		return Xcoord;
+		return this.Xcoord;
 	}
 
 	/**
-	 * @param xcoord The X coord that the graph is going to be placed at
+	 * @param xcoord
+	 *            The X coord that the graph is going to be placed at
 	 */
 	public void setXcoord(int xcoord) {
 		this.Xcoord = xcoord;
 	}
-	
+
 	/**
-	 * @param data The list of data to be plotted
-	 * @param height The height of the graph
-	 * @param scale How much pixels one unit of data is in height
+	 * @param data
+	 *            The list of data to be plotted
+	 * @param height
+	 *            The height of the graph
+	 * @param scale
+	 *            How much pixels one unit of data is in height
 	 */
 	public void draw(Stack<Integer> data, int height, int scale) {
 		this.turtle.setPenDown(false);
-		int width = (DATA_WIDTH * data.size()) + (PADDING * (data.size() + 1));
+		int width = (this.DATA_WIDTH * data.size())
+		        + (this.PADDING * (data.size() + 1));
 		this.turtle.turnToFace(this.Xcoord, this.Ycoord);
-		this.turtle.forward((int) this.turtle.getDistance(this.Xcoord, this.Ycoord));
-		this.turtle.turnToFace(turtle.getXPos(), turtle.getYPos() - 1); // Face it up
+		this.turtle.forward((int) this.turtle.getDistance(this.Xcoord,
+		        this.Ycoord));
+		this.turtle
+		        .turnToFace(this.turtle.getXPos(), this.turtle.getYPos() - 1); // Face
+																			   // it
+																			   // up
 		this.turtle.setPenDown(true);
-		this.turtle.setPenColor(BORDER_COLOR);
-		this.turtle.setPenWidth(BORDER_WIDTH);
-		
+		this.turtle.setPenColor(this.BORDER_COLOR);
+		this.turtle.setPenWidth(this.BORDER_WIDTH);
+
 		this.turtle.forward(height); // BEGIN graph border
 		this.turtle.turnRight();
 		this.turtle.forward(width);
@@ -100,19 +112,19 @@ public class TurtleGraph {
 		this.turtle.turnRight();
 		this.turtle.forward(width);
 		this.turtle.turnRight(); // END border
-		
+
 		this.turtle.turnRight();
-		this.turtle.setPenColor(DATA_COLOR);
-		this.turtle.setPenColor(DATA_COLOR);
-		
-		for(int theData : data) {
+		this.turtle.setPenColor(this.DATA_COLOR);
+		this.turtle.setPenColor(this.DATA_COLOR);
+
+		for (int theData : data) {
 			this.turtle.setPenDown(false);
-			this.turtle.forward(PADDING);
+			this.turtle.forward(this.PADDING);
 			this.turtle.turnLeft();
 			this.turtle.setPenDown(true);
 			this.turtle.forward(scale * theData);
 			this.turtle.turnRight();
-			this.turtle.forward(DATA_WIDTH);
+			this.turtle.forward(this.DATA_WIDTH);
 			this.turtle.turnRight();
 			this.turtle.forward(scale * theData);
 			this.turtle.turnLeft();
