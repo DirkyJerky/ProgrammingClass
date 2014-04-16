@@ -4,6 +4,7 @@ import me.yoerger.geoff.edu.progClass.bookClasses.SimpleInput;
 
 public class JukeBox {
 	private String[] playList;
+	@SuppressWarnings("unused")
 	private String[] fileList;
 
 	public JukeBox(String[] playList, String[] fileList) {
