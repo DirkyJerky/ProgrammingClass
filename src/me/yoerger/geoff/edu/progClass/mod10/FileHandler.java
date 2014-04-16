@@ -4,9 +4,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
+import com.google.common.base.Preconditions;
+
 public class FileHandler {
     private String[] playList = new String[3];
-    private String[] fileList = new String[3];
+    private File[] fileList = new File[3];
     private String file;
     
     FileHandler(String f) 
@@ -17,12 +19,14 @@ public class FileHandler {
     public void readFile() throws IOException
     {
         int index = 0;
-        File fileName = new File(file);
+        File fileName = new File(file + "\\playlist.txt");
         Scanner inFile = new Scanner(fileName);
         while (inFile.hasNext())
         {
             playList[index] = inFile.nextLine();
-            fileList[index] = inFile.nextLine();
+            fileList[index] = new File(this.file + "\\" + inFile.nextLine());
+            Preconditions.checkArgument(fileList[index].exists());
+            Preconditions.checkArgument(fileList[index].canRead());
             index++;
         }
         inFile.close();
@@ -33,7 +37,7 @@ public class FileHandler {
         return playList;
     }
     
-    public String[] getFileList()
+    public File[] getFileList()
     {
         return fileList;
     }

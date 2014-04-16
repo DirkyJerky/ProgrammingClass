@@ -1,13 +1,15 @@
 package me.yoerger.geoff.edu.progClass.mod10;
 
+import java.io.File;
+
 import me.yoerger.geoff.edu.progClass.bookClasses.SimpleInput;
+import me.yoerger.geoff.edu.progClass.bookClasses.Sound;
 
 public class JukeBox {
 	private String[] playList;
-	@SuppressWarnings("unused")
-	private String[] fileList;
+	private File[] fileList;
 
-	public JukeBox(String[] playList, String[] fileList) {
+	public JukeBox(String[] playList, File[] fileList) {
 		this.playList = playList;
 		this.fileList = fileList;
 	}
@@ -23,7 +25,8 @@ public class JukeBox {
 	}
 
 	public void playSong(int choice) {
-		// TODO Auto-generated method stub
+		Sound song = new Sound(fileList[choice].getAbsolutePath());
+		song.play();
 		
 	}
 
