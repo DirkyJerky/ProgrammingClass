@@ -6,6 +6,11 @@ import java.util.List;
 import org.javatuples.Pair;
 import me.yoerger.geoff.edu.progClass.bookClasses.MidiPlayer;
 
+/**
+ * Represent a song
+ * @author yoerggeo000
+ *
+ */
 public class MusicScore {
 	private List<Pair<NoteDur, Note>> notes;
 

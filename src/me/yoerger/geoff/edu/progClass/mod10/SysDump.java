@@ -3,6 +3,11 @@ package me.yoerger.geoff.edu.progClass.mod10;
 import java.io.File;
 import java.util.Map;
 
+/**
+ * Dump information about the current system, used to debug ma computer.
+ * @author yoerggeo000
+ *
+ */
 public class SysDump {
 
 	public static void main(String[] args) {

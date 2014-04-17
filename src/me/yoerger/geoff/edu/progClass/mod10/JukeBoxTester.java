@@ -5,6 +5,11 @@ import java.io.IOException;
 
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
 
+/**
+ * Base for {@link me.yoerger.geoff.edu.progClass.assignments.ten.tenThree}
+ * @author yoerggeo000
+ * @since Apr 17, 2014
+ */
 public class JukeBoxTester {
 	public static void main(String[] args) throws IOException {
         int choice = 0;
