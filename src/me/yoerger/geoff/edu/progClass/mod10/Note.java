@@ -1,7 +1,5 @@
 package me.yoerger.geoff.edu.progClass.mod10;
 
-import me.yoerger.geoff.edu.progClass.bookClasses.MidiPlayer;
-
 /**
  * Represents the main notes played on a treble clef scale.
  * @author yoerggeo000

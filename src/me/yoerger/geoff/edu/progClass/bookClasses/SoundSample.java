@@ -42,7 +42,7 @@ public class SoundSample
     try {
       value = sound.getSampleValue(frameNumber);
     } catch (SoundException ex) {
-    }
+    } catch (ArrayIndexOutOfBoundsException aex) {}
     return value;
   }
   

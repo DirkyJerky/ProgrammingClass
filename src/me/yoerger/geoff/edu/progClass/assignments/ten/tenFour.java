@@ -10,7 +10,7 @@ import me.yoerger.geoff.edu.progClass.assignments.Printer;
 public class tenFour implements Analysis{
 	
 	public static void main(String[] args) {
-		System.out.println("Tell Geoff he needs to actually do something here");
+		SoundFXTester.main(args);
 	}
 	@Override
 	public void printQuestions(Printer printer) {
