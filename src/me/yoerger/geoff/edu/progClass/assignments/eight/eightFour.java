@@ -1,5 +1,6 @@
 package me.yoerger.geoff.edu.progClass.assignments.eight;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
@@ -17,13 +18,11 @@ public class eightFour implements Analysis {
 	/**
 	 * @param args
 	 * @throws ImageFormatException if no file is selected or the file is not an image
+	 * @throws IOException If bad stuff happens when writing to file
 	 */
-	public static void main(String[] args) throws ImageFormatException {
+	public static void main(String[] args) throws ImageFormatException, IOException {
 		System.out.println("Please select a picture.");
 		String pictureLoc = FileChooser.pickAFile();
-		if ((pictureLoc == null) || !pictureLoc.matches(".*\\.jpe?g")) {
-			System.exit(1);
-		}
 		System.out.println("Do you want to Encode or Decode this image?");
 		Scanner in = new Scanner(System.in);
 		String input;
@@ -51,7 +50,6 @@ public class eightFour implements Analysis {
 			System.out.println(pe.decode());
 		}
 		in.close();
-		System.exit(0);
 	}
 
 	/*
@@ -69,8 +67,7 @@ public class eightFour implements Analysis {
 		printer.printAnswer("I learned how to easily get the code points of characters");
 
 		printer.print("Describe the biggest problem encountered and how it was fixed.");
-		printer.printAnswer("Figuring out why in one runtime it is able to decode it perfectly but in another it doesnt..."
-				+ "I still need to fix this, if you see this, tell Geoff (me) please. TODO: try on a unix enviroment.");
+		printer.printAnswer("Figureing out the the JPEG format auto-smoothes the images _._; I converted it to PNG and it worked perfectly");
 
 		printer.print("Describe at least one thing that will be done differently in the future.");
 		printer.printAnswer("Encode it with indiviual bits, not the bytes");

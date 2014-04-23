@@ -1,10 +1,10 @@
 package me.yoerger.geoff.edu.progClass.mod8;
 
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 
-import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
-import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
-import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
+import javax.imageio.ImageIO;
 
 /**
  * Utility class used for encoding Pictures with hidden messages
@@ -15,49 +15,59 @@ public class PictureEncoder {
 	/* This encoder uses the red values for each pixel,
 	 * and the message is encoded in ascii, wherefore the value of the 
 	 * red pixel in the top row is the message.*/
-	private Picture picture;
-	private String filename;
-	private Pixel[] topRow;
+	private BufferedImage picture;
+	private File filename;
+	private int width;
 	
 	/**
 	 * @param filename The location of the picture in question
-	 * @throws ImageFormatException If the file is not an image
+	 * @throws IOException If the file is not an image
 	 */
-	public PictureEncoder(String filename) throws ImageFormatException {
-		this.filename = filename;
-		if(new File(filename).canWrite()) {
-			this.picture = new Picture(filename);
+	public PictureEncoder(String filename) throws IOException {
+		this.filename = new File(filename);
+		if(this.filename.canWrite()) {
+			this.picture = ImageIO.read(this.filename);
 		} else {
 			throw new IllegalArgumentException("Picture must be writeable.");
 		}
-		this.topRow = new Pixel[this.picture.getWidth()];
-		for(int i = 0; i < this.picture.getWidth(); i++) {
-			this.topRow[i] = this.picture.getPixel(i, 0);
-		}
+		this.width = this.picture.getWidth();
 	}
 	
 	/**
 	 * @param message The message to encode into the picture
+	 * @throws IOException If bad stuff happens when writing to file.
 	 */
-	public void encode(String message) {
+	public void encode(String message) throws IOException {
 		char[] msgChars = message.toCharArray();
-		for(int i = 0; i < this.topRow.length; i++) { 
+		for(int i = 0; i < this.width; i++) { 
 			if(i < message.length()) {
-				this.topRow[i].setRed(Character.codePointAt(msgChars, i)); // Cast to int char values, etc " " => 32
+				this.picture.setRGB(i, 0, (int) msgChars[i]);
 			} else {
-				this.topRow[i].setRed(0); // Otherwise clear the rest of the row.
+				this.picture.setRGB(i, 0, 0); // Set to nothing
 			}
 		}
-		this.picture.write(this.filename);
+		if(this.filename.getAbsolutePath().endsWith(".png")) {
+			ImageIO.write(this.picture, "png", this.filename);
+		} else {
+			ImageIO.write(this.picture, "png", new File(this.filename.getAbsolutePath() + ".png"));
+		}
 	}
 	/**
 	 * @return The message that has been encoded into the picture
 	 */
 	public String decode() {
-		StringBuilder message = new StringBuilder("");
-		for(int i = 0; i < this.topRow.length; i++) { 
-			if (this.topRow[i].getRed() >= 32) {
-				message.append(Character.toChars(this.topRow[i].getRed()));
+		StringBuilder message = new StringBuilder();
+		long RBG;
+		for(int i = 0; i < this.width; i++) {
+			RBG = this.picture.getRGB(i, 0);
+			//System.err.printf("You are at pixel %d, 0; RBG is %d\n", i, RBG);
+			if (RBG >= 32 && RBG < 127) {
+				message.append((char) RBG);
+			} else {
+				RBG = Math.abs(-16777216 - RBG);
+				if (RBG >= 32 && RBG < 127) {
+					message.append((char) RBG);
+				}
 			}
 		}
 		return message.toString();

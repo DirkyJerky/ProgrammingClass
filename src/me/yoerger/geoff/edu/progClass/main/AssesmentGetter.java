@@ -15,9 +15,9 @@ public class AssesmentGetter {
 	/**
 	 * @param in a Scanner
 	 * @return THe class for the assignment number prompted for
-	 * @throws Exception If the user enters a wrong value
+	 * @throws ClassNotFoundException 
 	 */
-	public static Class<?> getAssignment(Scanner in) throws Exception {
+	public static Class<?> getAssignment(Scanner in) throws ClassNotFoundException {
 		System.out.println("Please enter 2 integers for the assignment:");
 		
 		System.out.println("The module number (6 - 10):");
