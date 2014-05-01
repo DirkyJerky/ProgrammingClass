@@ -1,5 +1,7 @@
 package me.yoerger.geoff.edu.progClass.assignments.ten;
 
+import org.junit.runners.JUnit4;
+
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 
@@ -10,7 +12,8 @@ import me.yoerger.geoff.edu.progClass.assignments.Printer;
 public class tenProject implements Analysis{
 
 	public static void main(String[] args) {
-		System.out.println("Tell Geoff he needs to actually do something here");
+		System.out.println(JUnit4.class.getMethods());
+		
 	}
 	@Override
 	public void printQuestions(Printer printer) {

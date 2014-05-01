@@ -2,8 +2,6 @@ package me.yoerger.geoff.edu.progClass.main;
 
 import java.util.Scanner;
 
-import com.google.common.io.Closer;
-
 /**
  * Prompts the user for which assignment to run / show questions for
  * @author yoerggeo000

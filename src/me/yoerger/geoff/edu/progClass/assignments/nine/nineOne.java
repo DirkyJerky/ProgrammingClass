@@ -11,7 +11,6 @@ import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
-import me.yoerger.geoff.edu.progClass.mod9.SafeCloser;
 import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 import com.google.common.base.Preconditions;
@@ -22,6 +21,7 @@ import com.google.common.base.Preconditions;
  */
 public class nineOne implements Analysis {
 
+	@SuppressWarnings("resource")
 	public static void main(final String[] args) throws ImageFormatException {
 		Printer printer = new Printer();
 		Scanner in = new Scanner(System.in);
