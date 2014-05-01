@@ -110,7 +110,6 @@ public class nineOne implements Analysis {
 			// }
 		}
 
-		SafeCloser.safelyClose(in);
 		combinedPicture.show(); // Show the magic
 	}
 

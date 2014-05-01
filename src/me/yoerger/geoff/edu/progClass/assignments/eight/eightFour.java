@@ -24,6 +24,7 @@ public class eightFour implements Analysis {
 		System.out.println("Please select a picture.");
 		String pictureLoc = FileChooser.pickAFile();
 		System.out.println("Do you want to Encode or Decode this image?");
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		String input;
 		outer: while (true) {
@@ -49,7 +50,6 @@ public class eightFour implements Analysis {
 			System.out.println();
 			System.out.println(pe.decode());
 		}
-		in.close();
 	}
 
 	/*

@@ -24,7 +24,7 @@ import me.yoerger.geoff.edu.progClass.assignments.Printer;
  */
 public class sixProject implements Analysis{
 
-	@SuppressWarnings("unused")
+	@SuppressWarnings({ "unused", "resource" })
 	public static void main(String[] args) {
 		boolean CL = false;
 		int JDKversion = 7; // Change if you want a different JDK
@@ -39,7 +39,6 @@ public class sixProject implements Analysis{
 			String classname = in.next();
 			System.out.println(getURLforClass(classname.toLowerCase(), JDKversion));
 			
-			in.close();
 		} else {
 			
 			System.out.println(getURLforClass(list.get(0).toLowerCase(), JDKversion));

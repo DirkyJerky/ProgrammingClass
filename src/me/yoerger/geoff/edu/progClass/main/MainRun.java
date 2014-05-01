@@ -1,8 +1,6 @@
 package me.yoerger.geoff.edu.progClass.main;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.Scanner;
 
 /**
  * Used to run assignments
@@ -12,38 +10,20 @@ public class MainRun {
 
 	/**
 	 * @param ourArgs
-	 * @throws InvocationTargetException 
-	 * @throws IllegalArgumentException 
-	 * @throws IllegalAccessException 
-	 * @throws SecurityException 
-	 * @throws NoSuchMethodException 
-	 * @throws ClassNotFoundException 
-	 * @throws Exception
+	 * @throws Exception because Theres too much exceptions that can be thrown
 	 * 
 	 */
 	public static void main(String[] ourArgs) throws Exception {
-		if(ourArgs.length == 0) {
-		Scanner in = new Scanner(System.in);
-		Class<?> mainClazz = AssesmentGetter.getAssignment(in);
-
-		 System.out.print("\n\n\n\n\n\n\n\n\n\n"); // Ten new lines
-		// if(shouldRun) {
+		Class<?> mainClazz;
+		if(ourArgs.length <= 1) {
+			mainClazz = AssesmentGetter.getAssignment();
+		} else {
+			mainClazz = AssesmentGetter.getAssignment(
+					Integer.valueOf(ourArgs[0]), Integer.valueOf(ourArgs[1]));
+		}
+		System.out.print("\n\n\n\n\n\n\n\n\n\n"); // Ten new lines
 		Method main = mainClazz.getMethod("main", String[].class);
 		main.invoke(null, new Object[] { ourArgs }); // Invoke main
-		Thread.sleep(5000); // Wait 5 seconds TODO Fix this so the assignment control the waiting
-		}
-		// } else {
-		// try {
-		// Printer printer = new Printer();
-		// Method printQuestions = mainClazz.getMethod("printQuestions",
-		// Printer.class);
-		// printQuestions.invoke(mainClazz.newInstance(), new Object[] { printer
-		// });
-		// } catch (NoSuchMethodException nsme) {
-		// System.out.println("No analysis questions present in class " +
-		// mainClazz.getName());
-		// }
-		// }
 	}
 
 }

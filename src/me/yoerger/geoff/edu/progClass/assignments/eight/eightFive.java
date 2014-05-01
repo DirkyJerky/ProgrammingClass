@@ -21,6 +21,7 @@ public class eightFive implements Analysis {
 	 * @param args
 	 * @throws ImageFormatException if no image is selected or the file is not an image
 	 */
+	@SuppressWarnings("resource")
 	public static void main(String[] args) throws ImageFormatException {
 		System.out
 				.println("Select your grayscale picture or hit cancel to select a picture to be grayscaled.");
@@ -46,7 +47,6 @@ public class eightFive implements Analysis {
 		double blueScale = in.nextDouble();
 		System.out.println("Green?");
 		double greenScale = in.nextDouble();
-		in.close();
 		for (Pixel pixel : pic.getPixels()) {
 			pixel.setRed((int) (pixel.getRed() * redScale));
 			pixel.setGreen((int) (pixel.getGreen() * greenScale));

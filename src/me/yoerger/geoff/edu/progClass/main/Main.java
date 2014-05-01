@@ -2,6 +2,8 @@ package me.yoerger.geoff.edu.progClass.main;
 
 import java.util.Scanner;
 
+import com.google.common.io.Closer;
+
 /**
  * Prompts the user for which assignment to run / show questions for
  * @author yoerggeo000
@@ -13,7 +15,7 @@ public class Main {
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-		if(args.length == 0) {
+		if(args.length <= 1) {
 			Scanner in = new Scanner(System.in);
 			System.out
 		        .println("Do you want to:\n"

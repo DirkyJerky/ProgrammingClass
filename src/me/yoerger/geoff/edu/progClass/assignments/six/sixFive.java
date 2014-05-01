@@ -16,6 +16,7 @@ import me.yoerger.geoff.edu.progClass.mod6.MovieUserManager;
 public class sixFive implements Analysis {
 
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		print("Hello and welcome to the movies", true);
@@ -40,7 +41,6 @@ public class sixFive implements Analysis {
 		print("", true);
 		print(ticket.reciept(), true);
 		
-		in.close();
 	}
 	private static void print(Object s, boolean line) {
 		if (line) { 

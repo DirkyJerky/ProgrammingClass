@@ -35,6 +35,7 @@ public class eightProject implements Analysis {
 	 */
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws InterruptedException {
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		Printer printer = new Printer();
 //		printer.print("How much iterations do you want the fractal to go for?");
@@ -55,7 +56,6 @@ public class eightProject implements Analysis {
 		Preconditions.checkArgument(SCALE >= 0.5, "Thats to small, try something bigger than 0.5");
 		Preconditions.checkArgument(SCALE < 1, "Thats to big, try something less than 1.0");
 		Preconditions.checkArgument(phase * Math.pow(SCALE, 15) < 50, "Try something smaller.");
-		in.close();
 		String[] degs = code.split(",");
 		
 		List<Integer> splits = new ArrayList<>();
