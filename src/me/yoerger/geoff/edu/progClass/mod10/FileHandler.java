@@ -20,7 +20,7 @@ public class FileHandler {
      * Make a new playlist browser
      * @param f The absolute filename of the playlist folder
      */
-    FileHandler(String f) 
+    public FileHandler(String f) 
     {
         this.file = f;
     }
