@@ -14,6 +14,11 @@ import me.yoerger.geoff.edu.progClass.mod10.JukeBox;
 import me.yoerger.geoff.edu.progClass.mod10.MusicScore;
 import me.yoerger.geoff.edu.progClass.mod10.Note;
 import me.yoerger.geoff.edu.progClass.mod10.NoteDur;
+import me.yoerger.geoff.edu.progClass.mod6.AdultContactInfo;
+import me.yoerger.geoff.edu.progClass.mod6.BigIdea;
+import me.yoerger.geoff.edu.progClass.mod6.Car;
+import me.yoerger.geoff.edu.progClass.mod6.ContactInfo;
+import me.yoerger.geoff.edu.progClass.mod6.UsedCar;
 
 import org.javatuples.Pair;
 import org.junit.Test;
@@ -127,7 +132,62 @@ public class tenProject extends TestCase implements Analysis{
 		
 	}
 	
+	@Test
+	public void testContactInfo() {
+		String name = "Geoff";
+		long homePhone = random.nextLong();
+		long workPhone = random.nextLong();
+		long cellPhone = random.nextLong();
+		AdultContactInfo aInfo = new AdultContactInfo(name, homePhone, cellPhone, workPhone);
+		ContactInfo cInfo = new ContactInfo(name, homePhone, cellPhone);
+		assertTrue(cInfo.toString().contains(String.valueOf(cellPhone)));		
+		assertTrue(cInfo.toString().contains(String.valueOf(homePhone)));		
+		assertTrue(cInfo.toString().contains(name));		
+		assertTrue(aInfo.toString().contains(String.valueOf(cellPhone)));		
+		assertTrue(aInfo.toString().contains(String.valueOf(homePhone)));		
+		assertTrue(aInfo.toString().contains(String.valueOf(workPhone)));		
+		assertTrue(aInfo.toString().contains(name));		
+	}
+
+	@SuppressWarnings("unused")
+	@Test(expected = IllegalArgumentException.class)
+	public void testBigIdeaException1() {
+		BigIdea idea = new BigIdea(5, null);
+	}
 	
+	@SuppressWarnings("unused")
+	@Test(expected = IllegalArgumentException.class)
+	public void testBigIdeaException2() {
+		BigIdea idea = new BigIdea(11, null);
+	}
+	@Test
+	public void testBigIdea() {
+		int modNum = random.nextInt(5) + 6;
+		BigIdea idea = new BigIdea(modNum, " Test2 ");
+		idea.setNewDesc(" Test2 ");
+		assertTrue(idea.toString().contains(String.valueOf(modNum)));
+		assertTrue(idea.toString().contains(" Test1 "));
+		assertTrue(idea.toString().contains(" Test2 "));
+	}
+	
+	public void testCar() {
+		int year = random.nextInt();
+		int mpm = random.nextInt();
+		float mpg = random.nextFloat();
+		
+		UsedCar car = new UsedCar(" Test1 ", " Test2 ", year, mpg, mpm);
+		assertTrue(car.toString(true, true).contains(String.valueOf(year)));
+		assertTrue(car.toString(true, true).contains(String.valueOf(mpm)));
+		assertTrue(car.toString(true, true).contains(String.valueOf(mpg)));
+		assertTrue(car.toString(true, true).contains(" Test1 "));
+		assertTrue(car.toString(true, true).contains(" Test2 "));
+		assertTrue(car.toString(false, false).contains(String.valueOf(year)));
+		assertFalse(car.toString(false, false).contains(String.valueOf(mpm)));
+		assertFalse(car.toString(false, false).contains(String.valueOf(mpg)));
+		assertTrue(car.toString(false, false).contains(" Test1 "));
+		assertTrue(car.toString(false, false).contains(" Test2 "));
+	}
+	s
 	
 	
 
