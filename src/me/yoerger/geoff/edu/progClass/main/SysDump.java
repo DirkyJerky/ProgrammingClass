@@ -1,4 +1,4 @@
-package me.yoerger.geoff.edu.progClass.mod10;
+package me.yoerger.geoff.edu.progClass.main;
 
 import java.io.File;
 import java.util.Map;
