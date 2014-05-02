@@ -20,14 +20,14 @@ import me.yoerger.geoff.edu.progClass.mod7.Range;
  * @see RandomColor
  */
 public class sevenProject implements Analysis{
-	private final static int PADDING = 50;
-	private final static int SCALE = 40;
-	private final static int TIMEOUT = 1000; // Millis
-	private final static Random random = new Random(System.nanoTime());
-	private final static World world = new World();
-	private static Map<CoordPair, Turtle> turtles = new HashMap<>();
 
 	public static void main(String[] args) {
+		final int PADDING = 50;
+		final int SCALE = 40;
+		final int TIMEOUT = 1000; // Millis
+		final Random random = new Random(System.nanoTime());
+		final World world = new World();
+		final Map<CoordPair, Turtle> turtles = new HashMap<>();
 		world.setBackground(Color.BLACK); // Should work, dont know why.
 		for(int x : new Range(10).range()) {
 			for(int y : new Range(10).range()) {
