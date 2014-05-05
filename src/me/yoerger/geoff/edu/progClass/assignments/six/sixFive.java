@@ -6,7 +6,6 @@ import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.mod6.MovieTicket;
 import me.yoerger.geoff.edu.progClass.mod6.MovieUser;
-import me.yoerger.geoff.edu.progClass.mod6.MovieUserManager;
 
 /**
  * Assignment 6.5
