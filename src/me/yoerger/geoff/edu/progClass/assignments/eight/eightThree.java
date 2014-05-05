@@ -61,14 +61,14 @@ public class eightThree implements Analysis{
 		panorama.setAllPixelsToAColor(Color.WHITE);
 		int xLoc = 0;
 		for(Picture pic : pictures) {
+			System.out.println("Amending picture @ " + pic.getFileName());
 			for(Pixel picPix : pic.getPixels()) {
 				panorama.setBasicPixel(xLoc + picPix.getX(), picPix.getY(), picPix.getColor().getRGB());
 			}
 			xLoc += pic.getWidth();
 		}
+		System.out.printf("Showing the final stiched picture made from %d originals", pictures.size());
 		panorama.show();
-		Thread.sleep(10000);
-		System.exit(0);
 		
 	}
 
