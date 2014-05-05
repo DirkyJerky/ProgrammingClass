@@ -30,8 +30,6 @@ public class sixFive implements Analysis {
 		print("Please make a 5 digit PIN for your account: ", false);
 		int pin = in.nextInt();
 		MovieUser user = new MovieUser(name, pin, card);
-		MovieUserManager users = new MovieUserManager(); // Just practicing java conventions
-		users.newUser(name, user);
 		print("You have successfully made a new account, " + name, true);
 		print("How many tickets to " + movie + " yould you like today? ", false);
 		int count = in.nextInt();

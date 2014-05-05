@@ -1,13 +1,17 @@
 package me.yoerger.geoff.edu.progClass.assignments.ten;
 
+import java.awt.Color;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
+import java.util.Set;
 
 import junit.framework.TestCase;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.main.AssesmentGetter;
 import me.yoerger.geoff.edu.progClass.mod10.FileHandler;
 import me.yoerger.geoff.edu.progClass.mod10.JukeBox;
@@ -16,9 +20,15 @@ import me.yoerger.geoff.edu.progClass.mod10.Note;
 import me.yoerger.geoff.edu.progClass.mod10.NoteDur;
 import me.yoerger.geoff.edu.progClass.mod6.AdultContactInfo;
 import me.yoerger.geoff.edu.progClass.mod6.BigIdea;
-import me.yoerger.geoff.edu.progClass.mod6.Car;
 import me.yoerger.geoff.edu.progClass.mod6.ContactInfo;
+import me.yoerger.geoff.edu.progClass.mod6.MovieTicket;
+import me.yoerger.geoff.edu.progClass.mod6.MovieUser;
 import me.yoerger.geoff.edu.progClass.mod6.UsedCar;
+import me.yoerger.geoff.edu.progClass.mod7.CoordPair;
+import me.yoerger.geoff.edu.progClass.mod7.RandomColor;
+import me.yoerger.geoff.edu.progClass.mod7.Range;
+import me.yoerger.geoff.edu.progClass.mod8.Grayscale;
+import me.yoerger.geoff.edu.progClass.mod9.Drawer;
 
 import org.javatuples.Pair;
 import org.junit.Test;
@@ -169,7 +179,8 @@ public class tenProject extends TestCase implements Analysis{
 		assertTrue(idea.toString().contains(" Test1 "));
 		assertTrue(idea.toString().contains(" Test2 "));
 	}
-	
+
+	@Test
 	public void testCar() {
 		int year = random.nextInt();
 		int mpm = random.nextInt();
@@ -187,8 +198,75 @@ public class tenProject extends TestCase implements Analysis{
 		assertTrue(car.toString(false, false).contains(" Test1 "));
 		assertTrue(car.toString(false, false).contains(" Test2 "));
 	}
-	s
+	@Test
+	public void testMovieTicket() {
+		MovieUser user = new MovieUser(" TestName ", 12345, 0);
+		MovieTicket ticket = new MovieTicket(user, " Test2 ", 676);
+		String reciept = ticket.reciept();
+		assertTrue("Reciept contains name", reciept.contains(" TestName "));
+		assertTrue("Reciept contains num admissions", reciept.contains(676 + ""));
+		assertTrue("Reciept contains movie name", reciept.contains(" Test2 "));
+		assertTrue("Recipet contains greeting", reciept.toLowerCase().contains("enjoy"));
+	}
 	
+	@Test
+	public void testCoordPair() {
+		CoordPair pair = new CoordPair(676, 989);
+		assertTrue("toString contains values", pair.toString().contains("676") && pair.toString().contains("989"));
+		assertTrue("X value returned correctly", pair.getX() == 676);
+		assertTrue("Y value returned correctly", pair.getY() == 989);
+		Set<Integer> hashCodeSet = new HashSet<>();
+		for(int i = 0; i < 10; i++) {
+			for(int j = 0; j < 10; j++) {
+				hashCodeSet.add(new CoordPair(i, j).hashCode());
+			}
+		}
+		assertTrue("CoordPair [0-10][0-10] hash codes are unique", hashCodeSet.size() == 100);
+	} 
+	
+	@Test
+	public void testRandomColor() {
+		Color color1 = RandomColor.make();
+		Color color2 = RandomColor.make();
+		int i = 0;
+		while(!color1.equals(color2) && i < 100) {
+			color2 = RandomColor.make();
+		}
+		assertTrue("RandomColor returns atleast 2 different values", color1.equals(color2));
+		
+	}
+	
+	@Test
+	public void testRange() {
+		int min = random.nextInt(100);
+		int max = min + random.nextInt(100);
+		Range range = new Range(max);
+		assertTrue("1 arg constructor contains 1", range.range().contains(1));
+		assertTrue("1 arg constructor contains max", range.range().contains(max));
+		range = new Range(min, max);
+		assertTrue("2 arg constructor does not contain min", !range.range().contains(min));
+		assertTrue("2 arg constructor contains min + 1", range.range().contains(min + 1));
+		assertTrue("2 arg constructor contains max", range.range().contains(max));
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testGrayScaleExceptions1() throws ImageFormatException {
+		Grayscale.grayscale(null);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testGrayScaleExceptions2() throws ImageFormatException {
+		Grayscale.grayscale("jpg");
+	}
+	@Test(expected = ImageFormatException.class)
+	public void testGrayScaleExceptions3() throws ImageFormatException {
+		Grayscale.grayscale("null/null/null.jpeg");
+	}
+	@SuppressWarnings("unused")
+	@Test(expected = NullPointerException.class)
+	public void testDrawerException() {
+		Drawer drawer = new Drawer(null);
+	}
 	
 
 	public static void main(String[] args) {

@@ -5,7 +5,6 @@ package me.yoerger.geoff.edu.progClass.mod6;
  * 
  * @author yoerggeo000
  * @see MovieUser
- * @see MovieUserManager
  */
 public class MovieTicket {
 	/**
