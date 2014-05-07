@@ -147,8 +147,6 @@ public class nineFour implements Analysis {
 			        corner.getY(TILE_WIDTH), null);
 		}
 		canvas.show();
-		Thread.sleep(10000);
-		System.exit(0);
 	}
 
 	@Override

@@ -20,6 +20,7 @@ import me.yoerger.geoff.edu.progClass.mod7.RandomColor;
 public class sevenThree implements Analysis{
 
 	public static void main(String[] args) {
+		System.out.println("Abstract line and box drawer");
 		List<Color> colorList = new ArrayList<>();
 		Random r = new Random();
 		for (int i = 0; i < 15; i++) {

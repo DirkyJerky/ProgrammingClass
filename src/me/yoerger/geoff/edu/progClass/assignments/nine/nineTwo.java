@@ -24,8 +24,6 @@ public class nineTwo implements Analysis {
 		canvas.setAllPixelsToAColor(Color.WHITE);
 		drawTest(canvas);
 		canvas.show();
-		Thread.sleep(10000);
-		System.exit(0);
 	}
 
 	/**

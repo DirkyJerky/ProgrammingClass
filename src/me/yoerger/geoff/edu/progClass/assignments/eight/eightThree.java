@@ -30,7 +30,7 @@ public class eightThree implements Analysis{
 		File file = new File(FileChooser.pickADirectory());
 		if(file.listFiles() == null) {
 			System.out.println("Please restart, but pick something this time.");
-			System.exit(-1);
+			throw new IllegalArgumentException("Please pick a file");
 		}
 		
 		List<Picture> pictures = new ArrayList<>();

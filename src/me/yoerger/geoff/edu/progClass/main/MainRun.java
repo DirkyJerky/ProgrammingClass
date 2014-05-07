@@ -16,7 +16,7 @@ public class MainRun {
 	public static void main(String[] ourArgs) throws Exception {
 		Class<?> mainClazz = AssesmentGetter.getAssignmentFromCLArgs(ourArgs);
 		Method main = mainClazz.getMethod("main", String[].class);
-		main.invoke(null, new Object[] { ourArgs }); // Invoke main
+		main.invoke(null, new Object[] {new String[0]}); // Invoke main
 	}
 
 }

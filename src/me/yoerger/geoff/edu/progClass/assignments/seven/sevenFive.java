@@ -40,6 +40,7 @@ public class sevenFive implements Analysis {
 
 		// Feel free to play around with the constants
 
+		System.out.println("Simple Box animation");
 		final World world = new World();
 		final Turtle turtle = new Turtle(100, 300, world);
 		final Turtle animTurtle = new Turtle(100, 300, world);
@@ -89,7 +90,6 @@ public class sevenFive implements Analysis {
 		while (world.isShowing()) {
 			anim.run();
 		}
-		System.exit(0);
 	}
 
 	@Override

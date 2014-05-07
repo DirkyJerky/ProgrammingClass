@@ -37,7 +37,7 @@ public class RunAll {
 			for(int assignment = 1; assignment <= 7; assignment++) {
 				String modN = String.valueOf(module);
 				String assignN = String.valueOf(assignment);
-				System.out.printf("----- Assignment %d.%d:\n", module, assignment);
+				System.out.printf("\n----- Assignment %d.%d:\n", module, assignment);
 				try {
 					if(run) {
 						Main.main(new String[] {"1", modN, assignN});

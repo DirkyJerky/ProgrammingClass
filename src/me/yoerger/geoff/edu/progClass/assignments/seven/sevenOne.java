@@ -15,7 +15,7 @@ import me.yoerger.geoff.edu.progClass.bookClasses.World;
 public class sevenOne implements Analysis {
 	public static void main(final String[] args) throws ImageFormatException {
 		int pixels = 0;
-		System.out.println("Please choose your file.");
+		System.out.println("Please choose your maze picture for the turtle.");
 		Picture pictureObj = new Picture(FileChooser.pickAFile());
 
 		// Picture pictureObj = new

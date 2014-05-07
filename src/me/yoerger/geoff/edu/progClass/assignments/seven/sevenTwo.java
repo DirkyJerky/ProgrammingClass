@@ -15,6 +15,7 @@ import me.yoerger.geoff.edu.progClass.bookClasses.World;
 public class sevenTwo implements Analysis{
 
 	public static void main(String[] args) {
+		System.out.println("Draw a turtle");
 		final Color LIME = new Color(Integer.decode("#7CFC00"));
 		final Color GREEN = new Color(Integer.decode("#458B00"));
 		World w = new World();

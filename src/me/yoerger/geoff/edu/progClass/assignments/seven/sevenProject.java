@@ -49,6 +49,7 @@ public class sevenProject implements Analysis{
 				}
 			}
 		};
+		System.out.println("Close the window to stop the animation");
 		while(world.isShowing()) {
 			runnable.run();
 			try {
@@ -57,7 +58,6 @@ public class sevenProject implements Analysis{
 			//	e.printStackTrace(); Ignore
 			}
 		}
-		System.exit(0);
 	}
 	/**
 	 * @return A random color of the rainbow

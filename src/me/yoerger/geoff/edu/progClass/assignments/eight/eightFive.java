@@ -29,12 +29,12 @@ public class eightFive implements Analysis {
 		if (picLoc == null) {
 			String noGrayPicLoc = FileChooser.pickAFile();
 			if ((noGrayPicLoc == null) || !noGrayPicLoc.matches(".*\\.jpe?g")) {
-				System.exit(1);
+				throw new IllegalArgumentException("Not a jpeg picture!");
 			}
 			picLoc = Grayscale.grayscale(noGrayPicLoc);
 		}
 		if (!picLoc.matches(".*\\.jpe?g")) {
-			System.exit(1);
+			throw new IllegalArgumentException("Not a jpeg picture!");
 		}
 
 		Picture pic = new Picture(picLoc);

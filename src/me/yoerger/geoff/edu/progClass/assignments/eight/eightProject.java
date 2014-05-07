@@ -89,11 +89,10 @@ public class eightProject implements Analysis {
 		Set<Turtle> iterTurtles = new HashSet<>();
 		for(int i : new Range(25).range()) {
 			if (!world.isShowing()) {
-				System.exit(0);
+				break;
 			}
 			if (phase < 10) {
-				finish();
-				System.exit(0);
+				break;
 			}
 			phase *= SCALE;
 			iterTurtles.addAll(world.getTurtleList());
@@ -182,7 +181,6 @@ public class eightProject implements Analysis {
 		System.out.println("\n\n\n\n\n\n\n\n\n\n"); // Clear the screen a bit.
 		System.out.println("Just ignore all that exception spam above me.");
 		Thread.sleep(FINAL_TIMEOUT);
-		System.exit(0);
 	}
 
 }

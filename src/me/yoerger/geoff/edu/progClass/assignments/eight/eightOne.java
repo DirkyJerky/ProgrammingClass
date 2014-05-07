@@ -76,7 +76,6 @@ public class eightOne implements Analysis{
 		
 		System.out.println("Close the window to end the program");
 		while(world.isShowing()) {} // Wait until the program is closed
-		System.exit(0);
 		
 	}
 	

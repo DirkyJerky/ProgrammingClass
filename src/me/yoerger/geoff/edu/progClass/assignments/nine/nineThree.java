@@ -35,8 +35,6 @@ public class nineThree implements Analysis {
 		Picture canvas = mirror4(tile);
 
 		canvas.show();
-		Thread.sleep(10000);
-		System.exit(0);
 	}
 
 	public static int mirrorNum(int num, double mirrorLine) {
