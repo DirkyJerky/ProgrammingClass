@@ -20,6 +20,7 @@ import me.yoerger.geoff.edu.progClass.mod9.Drawer;
 public class nineTwo implements Analysis {
 
 	public static void main(String[] args) throws Exception {
+		System.out.println("Making a face");
 		Picture canvas = new Picture(500, 500);
 		canvas.setAllPixelsToAColor(Color.WHITE);
 		drawTest(canvas);

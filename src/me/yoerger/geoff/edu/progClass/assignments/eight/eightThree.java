@@ -25,7 +25,7 @@ public class eightThree implements Analysis{
 	 */
 	public static void main(String[] args) throws Exception {
 		
-		System.out.println("Please select a folder with your pictures");
+		System.out.println("Please select a folder with your tiled pictures");
 		System.out.println("Your pictures will be stiched together from left to right \n in alphabetical order.");
 		File file = new File(FileChooser.pickADirectory());
 		if(file.listFiles() == null) {

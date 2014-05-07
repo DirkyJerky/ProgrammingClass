@@ -22,7 +22,7 @@ public class eightTwo implements Analysis {
 	 */
 	public static void main(String[] args) throws ImageFormatException {
 		// System.out.println("Close window to go onto the next picture");
-		System.out.println("Please select your picture");
+		System.out.println("Please select your picture to have effects applied to it");
 		// System.out.println("P:\\Programming\\Externals\\Refs\\Effects.jpg");
 		// //Meee
 		String picLocation = FileChooser.pickAFile();

@@ -21,6 +21,7 @@ public class nineThree implements Analysis {
 	private final static int TILE_WIDTH = 100;
 
 	public static void main(final String[] args) throws InterruptedException {
+		System.out.println("Tileing a simple picture 4 ways");
 		Picture tile = new Picture(TILE_WIDTH, TILE_WIDTH);
 		Drawer drawer = new Drawer(tile);
 		drawer.set(Color.BLACK, 10);

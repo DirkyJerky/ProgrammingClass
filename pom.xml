@@ -7,7 +7,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <build>
-        <sourceDirectory>${project.basedir}/src</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -39,6 +38,22 @@
 				</configuration>
 			</plugin>
         </plugins>
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+    	<scriptSourceDirectory>${project.basedir}/src.scripts</scriptSourceDirectory>
+    	<testSourceDirectory>${project.basedir}/src.test</testSourceDirectory>
+    	<outputDirectory>${project.basedir}/target/classes</outputDirectory>
+    	<testOutputDirectory>${project.basedir}target/test-classes</testOutputDirectory>
+    	<resources>
+      		<resource>
+        		<directory>${project.basedir}/etc</directory>
+      		</resource>
+    	</resources>
+    	<testResources>
+     		<testResource>
+        		<directory>${project.basedir}/etc.test</directory>
+      		</testResource>
+    	</testResources>
+    	<directory>${project.basedir}/target</directory>
     </build>
     <name>Programming Class Assignments - Geoff Yoerger</name>
     <dependencies>

@@ -21,7 +21,7 @@ public class eightFour implements Analysis {
 	 * @throws IOException If bad stuff happens when writing to file
 	 */
 	public static void main(String[] args) throws ImageFormatException, IOException {
-		System.out.println("Please select a picture.");
+		System.out.println("Please select a picture to encode or decode.");
 		String pictureLoc = FileChooser.pickAFile();
 		System.out.println("Do you want to Encode or Decode this image?");
 		@SuppressWarnings("resource")

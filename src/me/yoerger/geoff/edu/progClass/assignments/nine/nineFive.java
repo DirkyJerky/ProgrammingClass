@@ -37,6 +37,7 @@ public class nineFive implements Analysis {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		System.out.println("Get Weather data");
 		// String urlString =
 		// "http://www.weather.gov/view/prodsByState.php?state=FL&prodtype=climate";
 		// RetrieveData findData = new RetrieveData(urlString, "JANESVILLE");
