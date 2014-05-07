@@ -1,5 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <name>Programming Class Assignments - Geoff Yoerger</name>
     <groupId>me.yoerger.geoff.edu</groupId>
     <artifactId>progClass</artifactId>
     <version>1.0.0</version>
@@ -18,44 +19,43 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.4</version>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>me.yoerger.geoff.edu.progClass.main.Main</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>me.yoerger.geoff.edu.progClass.main.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
         </plugins>
         <sourceDirectory>${project.basedir}/src</sourceDirectory>
-    	<scriptSourceDirectory>${project.basedir}/src.scripts</scriptSourceDirectory>
-    	<testSourceDirectory>${project.basedir}/src.test</testSourceDirectory>
-    	<outputDirectory>${project.basedir}/target/classes</outputDirectory>
-    	<testOutputDirectory>${project.basedir}target/test-classes</testOutputDirectory>
-    	<resources>
-      		<resource>
-        		<directory>${project.basedir}/etc</directory>
-      		</resource>
-    	</resources>
-    	<testResources>
-     		<testResource>
-        		<directory>${project.basedir}/etc.test</directory>
-      		</testResource>
-    	</testResources>
-    	<directory>${project.basedir}/target</directory>
+        <scriptSourceDirectory>${project.basedir}/src.scripts</scriptSourceDirectory>
+        <testSourceDirectory>${project.basedir}/src.test</testSourceDirectory>
+        <outputDirectory>${project.basedir}/target/classes</outputDirectory>
+        <testOutputDirectory>${project.basedir}target/test-classes</testOutputDirectory>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/etc</directory>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>${project.basedir}/etc.test</directory>
+            </testResource>
+        </testResources>
+        <directory>${project.basedir}/target</directory>
     </build>
-    <name>Programming Class Assignments - Geoff Yoerger</name>
     <dependencies>
         <dependency>
             <groupId>sample</groupId>  
@@ -70,39 +70,39 @@
             <version>2.3</version>
         </dependency>
         <dependency>
-        	<groupId>com.google.guava</groupId>
-        	<artifactId>guava</artifactId>
-        	<version>16.0.1</version>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>16.0.1</version>
         </dependency>
         <dependency>
-        	<groupId>javax.media</groupId>
-        	<artifactId>jmf</artifactId>
-        	<version>2.1.1e</version>
+            <groupId>javax.media</groupId>
+            <artifactId>jmf</artifactId>
+            <version>2.1.1e</version>
         </dependency>
         <dependency>
-        	<groupId>jfree</groupId>
-        	<artifactId>jfreechart</artifactId>
-        	<version>1.0.13</version>
+            <groupId>jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.0.13</version>
         </dependency>
         <dependency>
-        	<groupId>javazoom</groupId>
-        	<artifactId>jlayer</artifactId>
-        	<version>1.0.1</version>
+            <groupId>javazoom</groupId>
+            <artifactId>jlayer</artifactId>
+            <version>1.0.1</version>
         </dependency>
         <dependency>
-        	<groupId>org.imgscalr</groupId>
-        	<artifactId>imgscalr-lib</artifactId>
-        	<version>4.2</version>
+            <groupId>org.imgscalr</groupId>
+            <artifactId>imgscalr-lib</artifactId>
+            <version>4.2</version>
         </dependency>
         <dependency>
-        	<groupId>org.javatuples</groupId>
-        	<artifactId>javatuples</artifactId>
-        	<version>1.2</version>
+            <groupId>org.javatuples</groupId>
+            <artifactId>javatuples</artifactId>
+            <version>1.2</version>
         </dependency>
         <dependency>
-        	<groupId>junit</groupId>
-        	<artifactId>junit</artifactId>
-        	<version>4.11</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
         </dependency>
     </dependencies>
 </project>
