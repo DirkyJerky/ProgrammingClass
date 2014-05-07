@@ -74,7 +74,7 @@ public class nineThree implements Analysis {
 	}
 
 	@Override
-	public void printQuestions(final Printer printer) {
+	public void printQuestions(Printer printer) {
 		printer.print("Describe the main point of this assignment. (Required)");
 		printer.printAnswer("Make a mirroring algorithm");
 

@@ -11,6 +11,7 @@ import java.util.Set;
 import junit.framework.TestCase;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
+import me.yoerger.geoff.edu.progClass.assignments.SysOutPrinter;
 import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.main.AssesmentGetter;
 import me.yoerger.geoff.edu.progClass.mod10.FileHandler;
@@ -99,7 +100,7 @@ public class tenProject extends TestCase implements Analysis{
 			for(int j = 1; j <= 7; j++ ) {
 				Class<?> assignment = AssesmentGetter.getAssignment(i, j);
 				assignment.getMethod("main", String[].class);
-				assignment.getMethod("printQuestions", Printer.class);
+				assignment.getMethod("printQuestions", SysOutPrinter.class);
 			}
 		}
 	}

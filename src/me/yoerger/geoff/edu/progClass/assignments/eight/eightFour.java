@@ -6,8 +6,8 @@ import java.util.Scanner;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
-import me.yoerger.geoff.edu.progClass.mod8.PictureEncoder;
 import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
+import me.yoerger.geoff.edu.progClass.mod8.PictureEncoder;
 
 /**
  * Assignment 8.4
@@ -56,7 +56,7 @@ public class eightFour implements Analysis {
 	 * @see me.yoerger.geoff.edu.progClass.assignments.Analysis#printQuestions(me.yoerger.geoff.edu.progClass.assignments.Printer)
 	 */
 	@Override
-	public void printQuestions(final Printer printer) {
+	public void printQuestions(Printer printer) {
 		printer.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
 		printer.printAnswer("Encode a secret message into an image");
 

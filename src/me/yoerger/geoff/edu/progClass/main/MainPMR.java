@@ -4,6 +4,7 @@ import java.lang.instrument.IllegalClassFormatException;
 import java.lang.reflect.Method;
 
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
+import me.yoerger.geoff.edu.progClass.assignments.SysOutPrinter;
 
 /**
  * Used to show PMR questions of an assignment
@@ -13,9 +14,10 @@ import me.yoerger.geoff.edu.progClass.assignments.Printer;
 public class MainPMR {
 
 	public static void main(String[] ourArgs) throws Exception {
-		Class<?> mainClazz = AssesmentGetter.getAssignment();
+		Class<?> mainClazz = AssesmentGetter.getAssignmentFromCLArgs(ourArgs);
+		
 		try {
-			Printer printer = new Printer();
+			Printer printer = new SysOutPrinter();
 			Method printQuestions = mainClazz.getMethod("printQuestions", Printer.class);
 			printQuestions.invoke(mainClazz.newInstance(), new Object[] { printer });
 		} catch (NoSuchMethodException nsme) {

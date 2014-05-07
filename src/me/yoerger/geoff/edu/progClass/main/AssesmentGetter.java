@@ -71,4 +71,11 @@ public class AssesmentGetter {
 					+ assignmentNums.get(assignment);
 		return Class.forName(mainId);
 	}
+	
+	public static Class<?> getAssignmentFromCLArgs(String[] CLArgs) throws ClassNotFoundException {
+		if(CLArgs.length >= 2) {
+			return getAssignment(Integer.parseInt(CLArgs[0]), Integer.parseInt(CLArgs[1]));
+		}
+		return getAssignment();
+	}
 }

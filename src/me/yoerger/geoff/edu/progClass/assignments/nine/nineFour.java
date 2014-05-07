@@ -11,12 +11,11 @@ import java.util.Map;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
 
 import org.imgscalr.Scalr;
-
-import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 /**
  * Assignemnt 9.4

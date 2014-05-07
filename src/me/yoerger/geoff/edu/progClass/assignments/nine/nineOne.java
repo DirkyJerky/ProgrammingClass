@@ -8,10 +8,11 @@ import java.util.Scanner;
 
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
+import me.yoerger.geoff.edu.progClass.assignments.SysOutPrinter;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.bookClasses.Pixel;
-import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 import com.google.common.base.Preconditions;
 
@@ -23,7 +24,7 @@ public class nineOne implements Analysis {
 
 	@SuppressWarnings("resource")
 	public static void main(final String[] args) throws ImageFormatException {
-		Printer printer = new Printer();
+		SysOutPrinter printer = new SysOutPrinter();
 		Scanner in = new Scanner(System.in);
 		printer.print("Please select the picture with a 'green screen' background.");
 		Picture greenScreenedPic = new Picture(FileChooser.pickAFile());
@@ -120,7 +121,7 @@ public class nineOne implements Analysis {
 	}
 
 	@Override
-	public void printQuestions(final Printer printer) {
+	public void printQuestions(Printer printer) {
 		printer.print("How did you delete the background from your original image?");
 		printer.printAnswer("I used premade pictures, but they are made using industry algortihms that are much better and more efficient at removing backgrounds.");
 

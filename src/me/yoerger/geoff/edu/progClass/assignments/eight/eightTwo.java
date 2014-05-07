@@ -6,9 +6,9 @@ import java.util.Map;
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
+import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 import me.yoerger.geoff.edu.progClass.bookClasses.Picture;
 import me.yoerger.geoff.edu.progClass.mod8.Effects;
-import me.yoerger.geoff.edu.progClass.bookClasses.ImageFormatException;
 
 /**
  * Assignment 8.2
@@ -48,7 +48,7 @@ public class eightTwo implements Analysis {
 	 * @see me.yoerger.geoff.edu.progClass.assignments.Analysis#printQuestions(me.yoerger.geoff.edu.progClass.assignments.Printer)
 	 */
 	@Override
-	public void printQuestions(final Printer printer) {
+	public void printQuestions(Printer printer) {
 
 		printer.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
 		printer.printAnswer("Apply color effects to pictures");

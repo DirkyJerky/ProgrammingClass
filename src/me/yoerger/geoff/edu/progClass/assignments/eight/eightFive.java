@@ -60,7 +60,7 @@ public class eightFive implements Analysis {
 	 * @see me.yoerger.geoff.edu.progClass.assignments.Analysis#printQuestions(me.yoerger.geoff.edu.progClass.assignments.Printer)
 	 */
 	@Override
-	public void printQuestions(final Printer printer) {
+	public void printQuestions(Printer printer) {
 		printer.print("Describe the main point of this assignment. (Required)");
 		printer.printAnswer("Apply color scales to a grayscale picture.");
 

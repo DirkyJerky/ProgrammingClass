@@ -87,13 +87,6 @@ public class nineFive implements Analysis {
 
 	}
 
-	@Override
-	public void printQuestions(Printer printer) {
-		printer.print("TODO");
-		printer.printAnswer("TODO");
-
-	}
-
 	private static JFreeChart createChart(TableXYDataset paramTableXYDataset)
 	{
 		DateAxis localDateAxis = new DateAxis(
@@ -131,5 +124,12 @@ public class nineFive implements Analysis {
 		        .setGradientPaintTransformer(new StandardGradientPaintTransformer(
 		                GradientPaintTransformType.HORIZONTAL));
 		return localJFreeChart;
+	}
+
+	@Override
+	public void printQuestions(Printer printer) {
+		printer.print("TODO");
+		printer.printAnswer("TODO");
+
 	}
 }

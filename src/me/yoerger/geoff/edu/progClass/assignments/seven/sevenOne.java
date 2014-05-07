@@ -53,7 +53,7 @@ public class sevenOne implements Analysis {
 	}
 
 	@Override
-	public void printQuestions(final Printer p) {
+	public void printQuestions(Printer p) {
 		p.print("Describe the me.yoerger.geoff.edu.progClass.main point of this assignment. (Required)");
 		p.printAnswer("Make a turtle move through a maze, and count the number of pixels it takes.");
 

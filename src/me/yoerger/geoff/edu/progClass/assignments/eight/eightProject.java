@@ -7,13 +7,14 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-import com.google.common.base.Preconditions;
-
 import me.yoerger.geoff.edu.progClass.assignments.Analysis;
 import me.yoerger.geoff.edu.progClass.assignments.Printer;
+import me.yoerger.geoff.edu.progClass.assignments.SysOutPrinter;
 import me.yoerger.geoff.edu.progClass.bookClasses.Turtle;
 import me.yoerger.geoff.edu.progClass.bookClasses.World;
 import me.yoerger.geoff.edu.progClass.mod7.Range;
+
+import com.google.common.base.Preconditions;
 
 
 /**
@@ -37,7 +38,7 @@ public class eightProject implements Analysis {
 	public static void main(String[] args) throws InterruptedException {
 		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
-		Printer printer = new Printer();
+		SysOutPrinter printer = new SysOutPrinter();
 //		printer.print("How much iterations do you want the fractal to go for?");
 		printer.print("Be VERY CAREFUL what you input, you can very easily run your computer out of memory.");
 		printer.print("If you input some wrong things, I will try stop me so I dont kill your computer.");
