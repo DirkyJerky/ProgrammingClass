@@ -1,4 +1,4 @@
-package me.yoerger.geoff.edu.progClass.mod8;
+package me.yoerger.geoff.edu.progClass.main.others;
 
 import me.yoerger.geoff.edu.progClass.bookClasses.FileChooser;
 

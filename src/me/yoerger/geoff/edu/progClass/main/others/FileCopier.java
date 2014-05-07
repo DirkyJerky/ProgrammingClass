@@ -1,4 +1,4 @@
-package me.yoerger.geoff.edu.progClass.mod9;
+package me.yoerger.geoff.edu.progClass.main.others;
 
 import java.io.File;
 import java.io.FileInputStream;
