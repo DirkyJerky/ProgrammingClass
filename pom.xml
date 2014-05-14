@@ -46,12 +46,12 @@
         <testOutputDirectory>${project.basedir}target/test-classes</testOutputDirectory>
         <resources>
             <resource>
-                <directory>${project.basedir}/etc</directory>
+                <directory>${project.basedir}/src.main.resources</directory>
             </resource>
         </resources>
         <testResources>
             <testResource>
-                <directory>${project.basedir}/etc.test</directory>
+                <directory>${project.basedir}/src.test.resources</directory>
             </testResource>
         </testResources>
         <directory>${project.basedir}/target</directory>
